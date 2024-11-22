@@ -1,0 +1,12 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-Platformer2D.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"C:\Users\qtsto\Desktop\HLD_Final\Platformer2D\Intermediate\Build\Win64\x64\Platformer2DEditor\Development\UnrealEd\SharedPCH.UnrealEd.Cpp20.h.obj"
+"C:\Users\qtsto\Desktop\HLD_Final\Platformer2D\Intermediate\Build\Win64\x64\UnrealEditor\Development\Platformer2D\Module.Platformer2D.cpp.obj"
+"C:\Users\qtsto\Desktop\HLD_Final\Platformer2D\Intermediate\Build\Win64\x64\UnrealEditor\Development\Platformer2D\Default.rc2.res"
+/OUT:"C:\Users\qtsto\Desktop\HLD_Final\Platformer2D\Intermediate\Build\Win64\x64\UnrealEditor\Development\Platformer2D\UnrealEditor-Platformer2D.lib"

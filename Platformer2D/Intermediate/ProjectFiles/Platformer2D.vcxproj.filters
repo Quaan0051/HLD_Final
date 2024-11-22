@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\Platformer2D.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{F31BBDD1-B3E8-3BCC-9652-680E16935819}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\Platformer2D.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\Platformer2DEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\Platformer2D">
+      <UniqueIdentifier>{C744DEAE-C354-31F7-B591-AFBAE5608E33}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\Platformer2D\BreakableBlock.cpp">
+      <Filter>Source\Platformer2D</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Platformer2D\BreakableBlock.h">
+      <Filter>Source\Platformer2D</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Platformer2D\BreakableBlockBit.cpp">
+      <Filter>Source\Platformer2D</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Platformer2D\BreakableBlockBit.h">
+      <Filter>Source\Platformer2D</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Platformer2D\CoinPickup.cpp">
+      <Filter>Source\Platformer2D</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Platformer2D\CoinPickup.h">
+      <Filter>Source\Platformer2D</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Platformer2D\CoinSwitch.cpp">
+      <Filter>Source\Platformer2D</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Platformer2D\CoinSwitch.h">
+      <Filter>Source\Platformer2D</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Platformer2D\DeadActor.cpp">
+      <Filter>Source\Platformer2D</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Platformer2D\DeadActor.h">
+      <Filter>Source\Platformer2D</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Platformer2D\Door.cpp">
+      <Filter>Source\Platformer2D</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Platformer2D\Door.h">
+      <Filter>Source\Platformer2D</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Platformer2D\Enemy.cpp">
+      <Filter>Source\Platformer2D</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Platformer2D\Enemy.h">
+      <Filter>Source\Platformer2D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Platformer2D\EnemyConstants.h">
+      <Filter>Source\Platformer2D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Platformer2D\GameConstants.h">
+      <Filter>Source\Platformer2D</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Platformer2D\Goomba.cpp">
+      <Filter>Source\Platformer2D</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Platformer2D\Goomba.h">
+      <Filter>Source\Platformer2D</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Platformer2D\ItemBox.cpp">
+      <Filter>Source\Platformer2D</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Platformer2D\ItemBox.h">
+      <Filter>Source\Platformer2D</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Platformer2D\ItemBoxCoin.cpp">
+      <Filter>Source\Platformer2D</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Platformer2D\ItemBoxCoin.h">
+      <Filter>Source\Platformer2D</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Platformer2D\MarioCamera.cpp">
+      <Filter>Source\Platformer2D</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Platformer2D\MarioCamera.h">
+      <Filter>Source\Platformer2D</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Platformer2D\MarioCharacter.cpp">
+      <Filter>Source\Platformer2D</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Platformer2D\MarioCharacter.h">
+      <Filter>Source\Platformer2D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Platformer2D\MarioConstants.h">
+      <Filter>Source\Platformer2D</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Platformer2D\MarioController.cpp">
+      <Filter>Source\Platformer2D</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Platformer2D\MarioController.h">
+      <Filter>Source\Platformer2D</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Platformer2D\MarioHUD.cpp">
+      <Filter>Source\Platformer2D</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Platformer2D\MarioHUD.h">
+      <Filter>Source\Platformer2D</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Platformer2D\MarioPlayerState.cpp">
+      <Filter>Source\Platformer2D</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Platformer2D\MarioPlayerState.h">
+      <Filter>Source\Platformer2D</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Platformer2D\MarioTransform.cpp">
+      <Filter>Source\Platformer2D</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Platformer2D\MarioTransform.h">
+      <Filter>Source\Platformer2D</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Platformer2D\MushroomPickup.cpp">
+      <Filter>Source\Platformer2D</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Platformer2D\MushroomPickup.h">
+      <Filter>Source\Platformer2D</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Platformer2D\Pickup.cpp">
+      <Filter>Source\Platformer2D</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Platformer2D\Pickup.h">
+      <Filter>Source\Platformer2D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Platformer2D\PickupConstants.h">
+      <Filter>Source\Platformer2D</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Platformer2D\PiranhaPlant.cpp">
+      <Filter>Source\Platformer2D</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Platformer2D\PiranhaPlant.h">
+      <Filter>Source\Platformer2D</Filter>
+    </ClInclude>
+    <None Include="..\..\Source\Platformer2D\Platformer2D.Build.cs">
+      <Filter>Source\Platformer2D</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\Platformer2D\Platformer2D.cpp">
+      <Filter>Source\Platformer2D</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Platformer2D\Platformer2D.h">
+      <Filter>Source\Platformer2D</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Platformer2D\PlatformerGameModeBase.cpp">
+      <Filter>Source\Platformer2D</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Platformer2D\PlatformerGameModeBase.h">
+      <Filter>Source\Platformer2D</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Platformer2D\PlatformerGameStateBase.cpp">
+      <Filter>Source\Platformer2D</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Platformer2D\PlatformerGameStateBase.h">
+      <Filter>Source\Platformer2D</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
