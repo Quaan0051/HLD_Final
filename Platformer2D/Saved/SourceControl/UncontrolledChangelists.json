@@ -138,7 +138,13 @@
 				"S:/HLD_Final/Platformer2D/Content/Sprites/Mario/MarioFireSkid_Sprite.uasset",
 				"S:/HLD_Final/Platformer2D/Content/Sprites/Mario/MarioFireWalk-1_Sprite.uasset",
 				"S:/HLD_Final/Platformer2D/Content/Sprites/Mario/MarioFireWalk-2_Sprite.uasset",
-				"S:/HLD_Final/Platformer2D/Content/Levels/LevelOne.umap"
+				"S:/HLD_Final/Platformer2D/Content/Levels/LevelOne.umap",
+				"S:/HLD_Final/Platformer2D/Content/Blueprints/BP_MarioTransform.uasset",
+				"S:/HLD_Final/Platformer2D/Content/Flipbooks/FP_MarioSuper-Damage.uasset",
+				"S:/HLD_Final/Platformer2D/Content/Flipbooks/FP_Lava.uasset",
+				"S:/HLD_Final/Platformer2D/Content/Blueprints/BP_Lava.uasset",
+				"S:/HLD_Final/Platformer2D/Content/Sprites/Mario/FP_MarioSuper-Damage.uasset",
+				"S:/HLD_Final/Platformer2D/Content/Sprites/Misc/FP_Lava.uasset"
 			]
 		}
 	]

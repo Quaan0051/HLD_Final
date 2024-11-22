@@ -21,7 +21,6 @@
 			"MushroomPickup.gen.cpp.obj",
 			"Pickup.gen.cpp.obj",
 			"PiranhaPlant.gen.cpp.obj",
-			"Platformer2D.init.gen.cpp.obj",
 			"PlatformerGameModeBase.gen.cpp.obj",
 			"PlatformerGameStateBase.gen.cpp.obj",
 			"BreakableBlock.cpp.obj",
@@ -45,7 +44,10 @@
 			"PiranhaPlant.cpp.obj",
 			"Platformer2D.cpp.obj",
 			"PlatformerGameModeBase.cpp.obj",
-			"PlatformerGameStateBase.cpp.obj"
+			"PlatformerGameStateBase.cpp.obj",
+			"Lava.gen.cpp.obj",
+			"Platformer2D.init.gen.cpp.obj",
+			"Lava.cpp.obj"
 		]
 	}
 }
