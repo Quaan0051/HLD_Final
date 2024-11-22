@@ -14,4 +14,7 @@ namespace EnemyConstants
 	// Goomba constants
 	constexpr float GoombaSpeed = 100.0f;
 	constexpr float GoombaSquishedDuration = 0.6f;
+
+	// Boo constants
+	constexpr float BooSpeed = 120.0f;
 }
