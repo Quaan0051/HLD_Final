@@ -11,7 +11,8 @@ enum class EEnemyType : uint8
 {
 	Unknown			UMETA(DisplayName = "Unknown"),
 	PiranhaPlant	UMETA(DisplayName = "PiranhaPlant"),
-	Goomba			UMETA(DisplayName = "Goomba")
+	Goomba			UMETA(DisplayName = "Goomba"),
+	Boo				UMETA(DisplayName = "Boo")
 };
 
 UCLASS()

@@ -42,10 +42,13 @@ void EmptyLinkFunctionForGeneratedCodeEnemy() {}
 		{ "EEnemyType::Unknown", (int64)EEnemyType::Unknown },
 		{ "EEnemyType::PiranhaPlant", (int64)EEnemyType::PiranhaPlant },
 		{ "EEnemyType::Goomba", (int64)EEnemyType::Goomba },
+		{ "EEnemyType::Boo", (int64)EEnemyType::Boo },
 	};
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UEnum_Platformer2D_EEnemyType_Statics::Enum_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+		{ "Boo.DisplayName", "Boo" },
+		{ "Boo.Name", "EEnemyType::Boo" },
 		{ "Goomba.DisplayName", "Goomba" },
 		{ "Goomba.Name", "EEnemyType::Goomba" },
 		{ "ModuleRelativePath", "Enemy.h" },
@@ -165,19 +168,19 @@ void EmptyLinkFunctionForGeneratedCodeEnemy() {}
 	}
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AEnemy);
 	AEnemy::~AEnemy() {}
-	struct Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_Enemy_h_Statics
+	struct Z_CompiledInDeferFile_FID_Platformer2D_Source_Platformer2D_Enemy_h_Statics
 	{
 		static const FEnumRegisterCompiledInInfo EnumInfo[];
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
-	const FEnumRegisterCompiledInInfo Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_Enemy_h_Statics::EnumInfo[] = {
-		{ EEnemyType_StaticEnum, TEXT("EEnemyType"), &Z_Registration_Info_UEnum_EEnemyType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1562723630U) },
+	const FEnumRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Platformer2D_Source_Platformer2D_Enemy_h_Statics::EnumInfo[] = {
+		{ EEnemyType_StaticEnum, TEXT("EEnemyType"), &Z_Registration_Info_UEnum_EEnemyType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 3297769234U) },
 	};
-	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_Enemy_h_Statics::ClassInfo[] = {
+	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Platformer2D_Source_Platformer2D_Enemy_h_Statics::ClassInfo[] = {
 		{ Z_Construct_UClass_AEnemy, AEnemy::StaticClass, TEXT("AEnemy"), &Z_Registration_Info_UClass_AEnemy, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AEnemy), 1489187650U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_Enemy_h_1889367533(TEXT("/Script/Platformer2D"),
-		Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_Enemy_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_Enemy_h_Statics::ClassInfo),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Platformer2D_Source_Platformer2D_Enemy_h_1224713484(TEXT("/Script/Platformer2D"),
+		Z_CompiledInDeferFile_FID_Platformer2D_Source_Platformer2D_Enemy_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Platformer2D_Source_Platformer2D_Enemy_h_Statics::ClassInfo),
 		nullptr, 0,
-		Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_Enemy_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_Enemy_h_Statics::EnumInfo));
+		Z_CompiledInDeferFile_FID_Platformer2D_Source_Platformer2D_Enemy_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Platformer2D_Source_Platformer2D_Enemy_h_Statics::EnumInfo));
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
