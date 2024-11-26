@@ -15,7 +15,7 @@ ALava::ALava()
 	PrimaryActorTick.bCanEverTick = true;
 
 	// Create the BoxComponent and set it as the Root component
-	BoxComponent = CreateDefaultSubobject<UBoxComponent>("BreakableBlockBoxComponent");
+	BoxComponent = CreateDefaultSubobject<UBoxComponent>("LavaBoxComponent");
 	BoxComponent->SetCollisionProfileName("BlockAllDynamic");
 	BoxComponent->SetNotifyRigidBodyCollision(true);
 	BoxComponent->SetSimulatePhysics(false);
@@ -23,13 +23,12 @@ ALava::ALava()
 	RootComponent = BoxComponent;
 
 	// Create the FlipbookComponent and attach it to the Root component
-	FlipbookComponent = CreateDefaultSubobject<UPaperFlipbookComponent>("BreakableBlockFlipbook");
+	FlipbookComponent = CreateDefaultSubobject<UPaperFlipbookComponent>("LavaFlipbook");
 	FlipbookComponent->SetCollisionEnabled(ECollisionEnabled::NoCollision);
 	FlipbookComponent->SetCollisionProfileName("NoCollision");
 	FlipbookComponent->SetupAttachment(RootComponent);
 
-	// Add "BreakableBlock" to the Actor tags
-	Tags.Add("BreakableBlock");
+	Tags.Add("Lava");
 
 }
 
@@ -42,7 +41,7 @@ void ALava::BeginPlay()
 
 void ALava::OnHit(UPrimitiveComponent* HitComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit)
 {
-	if (OtherActor->ActorHasTag("MarioCharacter") && Hit.Normal.Z)
+	if (OtherActor->ActorHasTag("MarioCharacter"))
 	{
 		Cast<AMarioCharacter>(OtherActor)->ApplyTransformChange(EMarioForm::Small, true);
 		Cast<AMarioCharacter>(OtherActor)->HandleDamage(true);

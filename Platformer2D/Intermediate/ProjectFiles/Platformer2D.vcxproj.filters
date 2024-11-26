@@ -66,6 +66,12 @@
     <ClInclude Include="..\..\Source\Platformer2D\DeadActor.h">
       <Filter>Source\Platformer2D</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\Platformer2D\DonutLift.cpp">
+      <Filter>Source\Platformer2D</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Platformer2D\DonutLift.h">
+      <Filter>Source\Platformer2D</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\Platformer2D\Door.cpp">
       <Filter>Source\Platformer2D</Filter>
     </ClCompile>
@@ -187,6 +193,11 @@
       <Filter>Source\Platformer2D</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\Platformer2D\PlatformerGameStateBase.h">
+      <Filter>Source\Platformer2D</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Source\Platformer2D\PlatformConstants.h">
       <Filter>Source\Platformer2D</Filter>
     </ClInclude>
   </ItemGroup>
