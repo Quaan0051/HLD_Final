@@ -18,7 +18,7 @@ ABoo::ABoo() :
 {
 	BoxComponent->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
 	BoxComponent->SetCollisionProfileName("BlockAllDynamic");
-	BoxComponent->SetSimulatePhysics(true);
+	BoxComponent->SetSimulatePhysics(false);
 	BoxComponent->SetNotifyRigidBodyCollision(true);
 	BoxComponent->OnComponentHit.AddDynamic(this, &ABoo::OnHit);
 
@@ -39,14 +39,40 @@ void ABoo::Tick(float DeltaTime)
 
 	if (State == EBooState::Active) 
 	{
+		ApplyInitialVelocity();
 		FVector location = GetActorLocation(); 
 		location += Velocity * DeltaTime; 
 		SetActorLocation(location); 
 	}
 
+	AMarioCharacter* mario = GetWorld()->GetFirstPlayerController()->GetPawn<AMarioCharacter>(); 
+	AMarioPlayerState* playerState = Cast<AMarioPlayerState>(mario->GetPlayerState());
+
 	// check mario direction
-	// if facing Boo, set state to hiding
-	// if facing away, set state to active
+	if (playerState->Direction == EMarioDirection::Left) // if mario looking left
+	{
+		if (GetActorLocation().X < mario->GetActorLocation().X) // if Boo is to the left of mario
+		{
+			SetState(EBooState::Hiding);
+		}
+		else if (GetActorLocation().X > mario->GetActorLocation().X) // if Boo is to the right of mario
+		{
+			BooDirection = EBooDirection::Left;
+			SetState(EBooState::Active);
+		}
+	}
+	else if (playerState->Direction == EMarioDirection::Right) // if mario looking right
+	{
+		if (GetActorLocation().X > mario->GetActorLocation().X) // if Boo is to the right of mario
+		{
+			SetState(EBooState::Hiding);
+		}
+		else if (GetActorLocation().X < mario->GetActorLocation().X) // if Boo is to the left of mario
+		{
+			BooDirection = EBooDirection::Right;
+			SetState(EBooState::Active);
+		}
+	}
 }
 
 void ABoo::SetState(EBooState state)
@@ -90,20 +116,30 @@ void ABoo::ApplyInitialVelocity()
 {
 	if (BooDirection == EBooDirection::Left) 
 	{
-		Velocity.X = -EnemyConstants::BooSpeed;
+		Velocity.X = -EnemyConstants::BooXSpeed;
+		FlipbookComponent->SetRelativeScale3D(FVector(1.0f, 1.0f, 1.0f));
 	}
 	else if (BooDirection == EBooDirection::Right)
 	{
-		Velocity.X = EnemyConstants::BooSpeed;
+		Velocity.X = EnemyConstants::BooXSpeed;
+		FlipbookComponent->SetRelativeScale3D(FVector(-1.0f, 1.0f, 1.0f));
+	}
+
+	AMarioCharacter* mario = GetWorld()->GetFirstPlayerController()->GetPawn<AMarioCharacter>();
+
+	if (GetActorLocation().Z > mario->GetActorLocation().Z) // if Boo Z > Mario Z
+	{
+		Velocity.Z = -EnemyConstants::BooZSpeed;
+	}
+	else if (GetActorLocation().Z < mario->GetActorLocation().Z) // if Boo Z < Mario Z
+	{
+		Velocity.Z = EnemyConstants::BooZSpeed;
 	}
 }
 
 void ABoo::UpdateFlipbook()
 {
 	UPaperFlipbook* flipbook = nullptr;
-
-	//FlipbookComponent->SetRelativeScale3D(FVector(1.0f, 1.0f, 1.0f));
-	//FlipbookComponent->SetRelativeScale3D(FVector(-1.0f, 1.0f, 1.0f));
 
 	if (State == EBooState::Active)
 	{
