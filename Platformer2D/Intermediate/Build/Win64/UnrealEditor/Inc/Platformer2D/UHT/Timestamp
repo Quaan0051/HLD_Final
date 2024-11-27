@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 S:\HLD_Final\Platformer2D\Source\Platformer2D\Boo.h
 S:\HLD_Final\Platformer2D\Source\Platformer2D\BreakableBlock.h
 S:\HLD_Final\Platformer2D\Source\Platformer2D\BreakableBlockBit.h
@@ -23,3 +24,29 @@ S:\HLD_Final\Platformer2D\Source\Platformer2D\PiranhaPlant.h
 S:\HLD_Final\Platformer2D\Source\Platformer2D\PlatformerGameModeBase.h
 S:\HLD_Final\Platformer2D\Source\Platformer2D\PlatformerGameStateBase.h
 S:\HLD_Final\Platformer2D\Source\Platformer2D\RotoDisc.h
+=======
+D:\School\HLD_Final\Platformer2D\Source\Platformer2D\Boo.h
+D:\School\HLD_Final\Platformer2D\Source\Platformer2D\BreakableBlockBit.h
+D:\School\HLD_Final\Platformer2D\Source\Platformer2D\BreakableBlock.h
+D:\School\HLD_Final\Platformer2D\Source\Platformer2D\CoinPickup.h
+D:\School\HLD_Final\Platformer2D\Source\Platformer2D\Enemy.h
+D:\School\HLD_Final\Platformer2D\Source\Platformer2D\Door.h
+D:\School\HLD_Final\Platformer2D\Source\Platformer2D\DeadActor.h
+D:\School\HLD_Final\Platformer2D\Source\Platformer2D\Goomba.h
+D:\School\HLD_Final\Platformer2D\Source\Platformer2D\DonutLift.h
+D:\School\HLD_Final\Platformer2D\Source\Platformer2D\MarioCamera.h
+D:\School\HLD_Final\Platformer2D\Source\Platformer2D\ItemBox.h
+D:\School\HLD_Final\Platformer2D\Source\Platformer2D\Lava.h
+D:\School\HLD_Final\Platformer2D\Source\Platformer2D\MarioCharacter.h
+D:\School\HLD_Final\Platformer2D\Source\Platformer2D\ItemBoxCoin.h
+D:\School\HLD_Final\Platformer2D\Source\Platformer2D\MarioController.h
+D:\School\HLD_Final\Platformer2D\Source\Platformer2D\MarioHUD.h
+D:\School\HLD_Final\Platformer2D\Source\Platformer2D\MarioPlayerState.h
+D:\School\HLD_Final\Platformer2D\Source\Platformer2D\MarioTransform.h
+D:\School\HLD_Final\Platformer2D\Source\Platformer2D\MushroomPickup.h
+D:\School\HLD_Final\Platformer2D\Source\Platformer2D\Pickup.h
+D:\School\HLD_Final\Platformer2D\Source\Platformer2D\PiranhaPlant.h
+D:\School\HLD_Final\Platformer2D\Source\Platformer2D\PlatformerGameModeBase.h
+D:\School\HLD_Final\Platformer2D\Source\Platformer2D\PlatformerGameStateBase.h
+D:\School\HLD_Final\Platformer2D\Source\Platformer2D\CoinSwitch.h
+>>>>>>> e679166bb0deee64c886aa730f92475bc7fde3d9

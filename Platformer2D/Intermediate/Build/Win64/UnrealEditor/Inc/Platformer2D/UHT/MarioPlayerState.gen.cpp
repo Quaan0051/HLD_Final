@@ -299,21 +299,21 @@ void EmptyLinkFunctionForGeneratedCodeMarioPlayerState() {}
 	}
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AMarioPlayerState);
 	AMarioPlayerState::~AMarioPlayerState() {}
-	struct Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_MarioPlayerState_h_Statics
+	struct Z_CompiledInDeferFile_FID_Platformer2D_Source_Platformer2D_MarioPlayerState_h_Statics
 	{
 		static const FEnumRegisterCompiledInInfo EnumInfo[];
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
-	const FEnumRegisterCompiledInInfo Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_MarioPlayerState_h_Statics::EnumInfo[] = {
+	const FEnumRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Platformer2D_Source_Platformer2D_MarioPlayerState_h_Statics::EnumInfo[] = {
 		{ EMarioState_StaticEnum, TEXT("EMarioState"), &Z_Registration_Info_UEnum_EMarioState, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 4142940343U) },
 		{ EMarioForm_StaticEnum, TEXT("EMarioForm"), &Z_Registration_Info_UEnum_EMarioForm, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 4157539761U) },
 		{ EMarioDirection_StaticEnum, TEXT("EMarioDirection"), &Z_Registration_Info_UEnum_EMarioDirection, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1786260164U) },
 	};
-	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_MarioPlayerState_h_Statics::ClassInfo[] = {
+	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Platformer2D_Source_Platformer2D_MarioPlayerState_h_Statics::ClassInfo[] = {
 		{ Z_Construct_UClass_AMarioPlayerState, AMarioPlayerState::StaticClass, TEXT("AMarioPlayerState"), &Z_Registration_Info_UClass_AMarioPlayerState, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMarioPlayerState), 175318555U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_MarioPlayerState_h_3822264620(TEXT("/Script/Platformer2D"),
-		Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_MarioPlayerState_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_MarioPlayerState_h_Statics::ClassInfo),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Platformer2D_Source_Platformer2D_MarioPlayerState_h_3822264620(TEXT("/Script/Platformer2D"),
+		Z_CompiledInDeferFile_FID_Platformer2D_Source_Platformer2D_MarioPlayerState_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Platformer2D_Source_Platformer2D_MarioPlayerState_h_Statics::ClassInfo),
 		nullptr, 0,
-		Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_MarioPlayerState_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_MarioPlayerState_h_Statics::EnumInfo));
+		Z_CompiledInDeferFile_FID_Platformer2D_Source_Platformer2D_MarioPlayerState_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Platformer2D_Source_Platformer2D_MarioPlayerState_h_Statics::EnumInfo));
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

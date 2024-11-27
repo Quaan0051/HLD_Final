@@ -236,15 +236,15 @@ void EmptyLinkFunctionForGeneratedCodeCoinSwitch() {}
 	}
 	DEFINE_VTABLE_PTR_HELPER_CTOR(ACoinSwitch);
 	ACoinSwitch::~ACoinSwitch() {}
-	struct Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_CoinSwitch_h_Statics
+	struct Z_CompiledInDeferFile_FID_Platformer2D_Source_Platformer2D_CoinSwitch_h_Statics
 	{
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
-	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_CoinSwitch_h_Statics::ClassInfo[] = {
+	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Platformer2D_Source_Platformer2D_CoinSwitch_h_Statics::ClassInfo[] = {
 		{ Z_Construct_UClass_ACoinSwitch, ACoinSwitch::StaticClass, TEXT("ACoinSwitch"), &Z_Registration_Info_UClass_ACoinSwitch, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ACoinSwitch), 4070740024U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_CoinSwitch_h_4203487408(TEXT("/Script/Platformer2D"),
-		Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_CoinSwitch_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_CoinSwitch_h_Statics::ClassInfo),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Platformer2D_Source_Platformer2D_CoinSwitch_h_4203487408(TEXT("/Script/Platformer2D"),
+		Z_CompiledInDeferFile_FID_Platformer2D_Source_Platformer2D_CoinSwitch_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Platformer2D_Source_Platformer2D_CoinSwitch_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

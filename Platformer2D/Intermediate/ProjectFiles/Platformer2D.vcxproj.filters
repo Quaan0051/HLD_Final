@@ -198,11 +198,14 @@
     <ClInclude Include="..\..\Source\Platformer2D\PlatformerGameStateBase.h">
       <Filter>Source\Platformer2D</Filter>
     </ClInclude>
+<<<<<<< HEAD
     <ClCompile Include="..\..\Source\Platformer2D\RotoDisc.cpp">
       <Filter>Source\Platformer2D</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\Platformer2D\RotoDisc.h">
       <Filter>Source\Platformer2D</Filter>
     </ClInclude>
+=======
+>>>>>>> e679166bb0deee64c886aa730f92475bc7fde3d9
   </ItemGroup>
 </Project>
