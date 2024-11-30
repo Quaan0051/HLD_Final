@@ -36,6 +36,9 @@
 /FUNCTIONPADMIN:6
 "D:\School\HLD_Final\Platformer2D\Intermediate\Build\Win64\x64\Platformer2DEditor\DebugGame\UnrealEd\SharedPCH.UnrealEd.NonOptimized.Cpp20.h.obj"
 "D:\School\HLD_Final\Platformer2D\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\Platformer2D\Module.Platformer2D.cpp.obj"
+"D:\School\HLD_Final\Platformer2D\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\Platformer2D\RotoDisc.cpp.obj"
+"D:\School\HLD_Final\Platformer2D\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\Platformer2D\Platformer2D.init.gen.cpp.obj"
+"D:\School\HLD_Final\Platformer2D\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\Platformer2D\RotoDisc.gen.cpp.obj"
 "D:\School\HLD_Final\Platformer2D\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\Platformer2D\Default.rc2.res"
 "..\Intermediate\Build\Win64\x64\UnrealEditor\Development\Engine\UnrealEditor-Engine.lib"
 "..\Plugins\2D\Paper2D\Intermediate\Build\Win64\x64\UnrealEditor\Development\Paper2D\UnrealEditor-Paper2D.lib"

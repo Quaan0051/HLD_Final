@@ -4,5 +4,7 @@
 
 namespace PlatformConstants
 {
-	constexpr float DonutLiftActiveDuration = 2.0f;
+	constexpr float DonutLiftActiveDuration = 1.3f;
+
+	constexpr float RotoDiskSpeed = 10.0f;
 }
