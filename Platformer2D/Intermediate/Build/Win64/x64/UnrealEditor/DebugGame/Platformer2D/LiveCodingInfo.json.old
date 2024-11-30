@@ -2,7 +2,6 @@
 	"RemapUnityFiles": 
 	{
 		"Module.Platformer2D.cpp.obj": [
-			"Boo.cpp.obj",
 			"BreakableBlock.cpp.obj",
 			"BreakableBlockBit.cpp.obj",
 			"CoinPickup.cpp.obj",
@@ -51,7 +50,8 @@
 			"PiranhaPlant.gen.cpp.obj",
 			"Platformer2D.init.gen.cpp.obj",
 			"PlatformerGameModeBase.gen.cpp.obj",
-			"PlatformerGameStateBase.gen.cpp.obj"
+			"PlatformerGameStateBase.gen.cpp.obj",
+			"Boo.cpp.obj"
 		]
 	}
 }
