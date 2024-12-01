@@ -26,15 +26,15 @@ namespace EnemyConstants
 
 	//BoomBoom constants
 	constexpr int	BoomBoomMaxLives = 3;
-	constexpr float BoomBoomInitialSpeed = 3.0f;
-	constexpr float BoomBoomDamagedSpeed = 6.0f;
-	constexpr float BoomBoomJumpStrength = 5.0f;
+	constexpr float BoomBoomInitialSpeed = 150.0f;
+	constexpr float BoomBoomDamagedSpeed = 200.0f;
+	constexpr float BoomBoomJumpStrength = 7000.0f;
 	constexpr float BoomBoomPlayerDetectionRange = 200.0f;
 	constexpr float BoomBoomDamagedDuration = 2.0f;
-	constexpr float BoomBoomIdleDuration = 2.0f;
+	constexpr float BoomBoomIdleDuration = 1.5f;
 	constexpr float BoomBoomJumpPauseDuration = 1.0f;
 	constexpr float BoomBoomDirectionChangeTimerMin = 0.5f;
 	constexpr float BoomBoomDirectionChangeTimerMax = 2.0f;
-	constexpr float BoomBoomJumpTimerMin = 2.0f;
-	constexpr float BoomBoomJumpTimerMax = 4.0f;
+	constexpr float BoomBoomJumpTimerMin = 3.0f;
+	constexpr float BoomBoomJumpTimerMax = 5.0f;
 }

@@ -84,6 +84,9 @@
     <ClInclude Include="..\..\Source\Platformer2D\Door.h">
       <Filter>Source\Platformer2D</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Source\Platformer2D\EffectConstants.h">
+      <Filter>Source\Platformer2D</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\Platformer2D\Enemy.cpp">
       <Filter>Source\Platformer2D</Filter>
     </ClCompile>
@@ -204,10 +207,22 @@
     <ClInclude Include="..\..\Source\Platformer2D\PlatformerGameStateBase.h">
       <Filter>Source\Platformer2D</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\Platformer2D\PoofEffect.cpp">
+      <Filter>Source\Platformer2D</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Platformer2D\PoofEffect.h">
+      <Filter>Source\Platformer2D</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\Platformer2D\RotoDisc.cpp">
       <Filter>Source\Platformer2D</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\Platformer2D\RotoDisc.h">
+      <Filter>Source\Platformer2D</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Platformer2D\StarEffect.cpp">
+      <Filter>Source\Platformer2D</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Platformer2D\StarEffect.h">
       <Filter>Source\Platformer2D</Filter>
     </ClInclude>
   </ItemGroup>

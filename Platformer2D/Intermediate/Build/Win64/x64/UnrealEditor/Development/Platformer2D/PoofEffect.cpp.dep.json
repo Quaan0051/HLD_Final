@@ -1,0 +1,19 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "s:\\hld_final\\platformer2d\\source\\platformer2d\\poofeffect.cpp",
+        "ProvidedModule": "",
+        "PCH": "s:\\hld_final\\platformer2d\\intermediate\\build\\win64\\x64\\platformer2deditor\\development\\unrealed\\sharedpch.unrealed.cpp20.h.pch",
+        "Includes": [
+            "s:\\hld_final\\platformer2d\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\platformer2d\\definitions.platformer2d.h",
+            "s:\\hld_final\\platformer2d\\source\\platformer2d\\poofeffect.h",
+            "s:\\hld_final\\platformer2d\\intermediate\\build\\win64\\unrealeditor\\inc\\platformer2d\\uht\\poofeffect.generated.h",
+            "s:\\ue_5.3\\engine\\plugins\\2d\\paper2d\\source\\paper2d\\classes\\paperflipbook.h",
+            "s:\\ue_5.3\\engine\\plugins\\2d\\paper2d\\intermediate\\build\\win64\\unrealeditor\\inc\\paper2d\\uht\\paperflipbook.generated.h",
+            "s:\\ue_5.3\\engine\\plugins\\2d\\paper2d\\source\\paper2d\\classes\\paperflipbookcomponent.h",
+            "s:\\ue_5.3\\engine\\plugins\\2d\\paper2d\\intermediate\\build\\win64\\unrealeditor\\inc\\paper2d\\uht\\paperflipbookcomponent.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

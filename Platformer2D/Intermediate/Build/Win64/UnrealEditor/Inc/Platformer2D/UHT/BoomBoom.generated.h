@@ -17,16 +17,18 @@ struct FHitResult;
 #endif
 #define PLATFORMER2D_BoomBoom_generated_h
 
-#define FID_HLD_Final_Platformer2D_Source_Platformer2D_BoomBoom_h_25_SPARSE_DATA
-#define FID_HLD_Final_Platformer2D_Source_Platformer2D_BoomBoom_h_25_SPARSE_DATA_PROPERTY_ACCESSORS
-#define FID_HLD_Final_Platformer2D_Source_Platformer2D_BoomBoom_h_25_EDITOR_ONLY_SPARSE_DATA_PROPERTY_ACCESSORS
-#define FID_HLD_Final_Platformer2D_Source_Platformer2D_BoomBoom_h_25_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_HLD_Final_Platformer2D_Source_Platformer2D_BoomBoom_h_26_SPARSE_DATA
+#define FID_HLD_Final_Platformer2D_Source_Platformer2D_BoomBoom_h_26_SPARSE_DATA_PROPERTY_ACCESSORS
+#define FID_HLD_Final_Platformer2D_Source_Platformer2D_BoomBoom_h_26_EDITOR_ONLY_SPARSE_DATA_PROPERTY_ACCESSORS
+#define FID_HLD_Final_Platformer2D_Source_Platformer2D_BoomBoom_h_26_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execOnBottomOverlap); \
+	DECLARE_FUNCTION(execOnSideOverlap); \
 	DECLARE_FUNCTION(execOnHit);
 
 
-#define FID_HLD_Final_Platformer2D_Source_Platformer2D_BoomBoom_h_25_ACCESSORS
-#define FID_HLD_Final_Platformer2D_Source_Platformer2D_BoomBoom_h_25_INCLASS_NO_PURE_DECLS \
+#define FID_HLD_Final_Platformer2D_Source_Platformer2D_BoomBoom_h_26_ACCESSORS
+#define FID_HLD_Final_Platformer2D_Source_Platformer2D_BoomBoom_h_26_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesABoomBoom(); \
 	friend struct Z_Construct_UClass_ABoomBoom_Statics; \
@@ -35,7 +37,7 @@ public: \
 	DECLARE_SERIALIZER(ABoomBoom)
 
 
-#define FID_HLD_Final_Platformer2D_Source_Platformer2D_BoomBoom_h_25_ENHANCED_CONSTRUCTORS \
+#define FID_HLD_Final_Platformer2D_Source_Platformer2D_BoomBoom_h_26_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API ABoomBoom(ABoomBoom&&); \
@@ -47,17 +49,17 @@ public: \
 	NO_API virtual ~ABoomBoom();
 
 
-#define FID_HLD_Final_Platformer2D_Source_Platformer2D_BoomBoom_h_22_PROLOG
-#define FID_HLD_Final_Platformer2D_Source_Platformer2D_BoomBoom_h_25_GENERATED_BODY \
+#define FID_HLD_Final_Platformer2D_Source_Platformer2D_BoomBoom_h_23_PROLOG
+#define FID_HLD_Final_Platformer2D_Source_Platformer2D_BoomBoom_h_26_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_HLD_Final_Platformer2D_Source_Platformer2D_BoomBoom_h_25_SPARSE_DATA \
-	FID_HLD_Final_Platformer2D_Source_Platformer2D_BoomBoom_h_25_SPARSE_DATA_PROPERTY_ACCESSORS \
-	FID_HLD_Final_Platformer2D_Source_Platformer2D_BoomBoom_h_25_EDITOR_ONLY_SPARSE_DATA_PROPERTY_ACCESSORS \
-	FID_HLD_Final_Platformer2D_Source_Platformer2D_BoomBoom_h_25_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_HLD_Final_Platformer2D_Source_Platformer2D_BoomBoom_h_25_ACCESSORS \
-	FID_HLD_Final_Platformer2D_Source_Platformer2D_BoomBoom_h_25_INCLASS_NO_PURE_DECLS \
-	FID_HLD_Final_Platformer2D_Source_Platformer2D_BoomBoom_h_25_ENHANCED_CONSTRUCTORS \
+	FID_HLD_Final_Platformer2D_Source_Platformer2D_BoomBoom_h_26_SPARSE_DATA \
+	FID_HLD_Final_Platformer2D_Source_Platformer2D_BoomBoom_h_26_SPARSE_DATA_PROPERTY_ACCESSORS \
+	FID_HLD_Final_Platformer2D_Source_Platformer2D_BoomBoom_h_26_EDITOR_ONLY_SPARSE_DATA_PROPERTY_ACCESSORS \
+	FID_HLD_Final_Platformer2D_Source_Platformer2D_BoomBoom_h_26_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_HLD_Final_Platformer2D_Source_Platformer2D_BoomBoom_h_26_ACCESSORS \
+	FID_HLD_Final_Platformer2D_Source_Platformer2D_BoomBoom_h_26_INCLASS_NO_PURE_DECLS \
+	FID_HLD_Final_Platformer2D_Source_Platformer2D_BoomBoom_h_26_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -73,7 +75,8 @@ template<> PLATFORMER2D_API UClass* StaticClass<class ABoomBoom>();
 	op(EBoomBoomState::Idle) \
 	op(EBoomBoomState::Active) \
 	op(EBoomBoomState::Jumping) \
-	op(EBoomBoomState::Damaged) 
+	op(EBoomBoomState::Damaged) \
+	op(EBoomBoomState::Dead) 
 
 enum class EBoomBoomState : uint8;
 template<> struct TIsUEnumClass<EBoomBoomState> { enum { Value = true }; };

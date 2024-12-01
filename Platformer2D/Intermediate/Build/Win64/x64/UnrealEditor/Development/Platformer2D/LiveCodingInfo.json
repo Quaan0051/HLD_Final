@@ -3,7 +3,6 @@
 	{
 		"Module.Platformer2D.cpp.obj": [
 			"Boo.gen.cpp.obj",
-			"BoomBoom.gen.cpp.obj",
 			"BreakableBlock.gen.cpp.obj",
 			"BreakableBlockBit.gen.cpp.obj",
 			"CoinPickup.gen.cpp.obj",
@@ -11,6 +10,7 @@
 			"DeadActor.gen.cpp.obj",
 			"DonutLift.gen.cpp.obj",
 			"Door.gen.cpp.obj",
+			"Enemy.gen.cpp.obj",
 			"Goomba.gen.cpp.obj",
 			"ItemBox.gen.cpp.obj",
 			"ItemBoxCoin.gen.cpp.obj",
@@ -35,6 +35,7 @@
 			"DeadActor.cpp.obj",
 			"DonutLift.cpp.obj",
 			"Door.cpp.obj",
+			"Enemy.cpp.obj",
 			"Goomba.cpp.obj",
 			"ItemBox.cpp.obj",
 			"ItemBoxCoin.cpp.obj",
@@ -52,10 +53,13 @@
 			"PlatformerGameModeBase.cpp.obj",
 			"PlatformerGameStateBase.cpp.obj",
 			"RotoDisc.cpp.obj",
-			"Enemy.gen.cpp.obj",
+			"BoomBoom.gen.cpp.obj",
 			"Platformer2D.init.gen.cpp.obj",
+			"PoofEffect.gen.cpp.obj",
+			"StarEffect.gen.cpp.obj",
 			"BoomBoom.cpp.obj",
-			"Enemy.cpp.obj"
+			"PoofEffect.cpp.obj",
+			"StarEffect.cpp.obj"
 		]
 	}
 }

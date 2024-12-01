@@ -4,6 +4,8 @@
 #include "BoomBoom.h"
 #include "EnemyConstants.h"
 #include "MarioCharacter.h"
+#include "StarEffect.h"
+#include "PoofEffect.h"
 #include "PaperFlipbookComponent.h"
 #include "Components/BoxComponent.h"
 #include "Math/UnrealMathUtility.h"
@@ -12,16 +14,39 @@ ABoomBoom::ABoomBoom() :
 	Velocity(),
 	State(EBoomBoomState::Unknown),
 	StateTimer(0.0f),
+	DirectionTimer(0.0f),
 	Lives(EnemyConstants::BoomBoomMaxLives),
 	IdleFlipbook(nullptr),
 	ActiveFlipbook(nullptr),
-	DamagedFlipbook(nullptr)
+	DamagedFlipbook(nullptr),
+	DeadFlipbook(nullptr)
 {
 	BoxComponent->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
 	BoxComponent->SetCollisionProfileName("BlockAllDynamic");
 	BoxComponent->SetSimulatePhysics(true);
 	BoxComponent->SetNotifyRigidBodyCollision(true);
 	BoxComponent->OnComponentHit.AddDynamic(this, &ABoomBoom::OnHit);
+
+	LeftOverlap = CreateDefaultSubobject<UBoxComponent>("BoomBoomLeftOverlap");
+	LeftOverlap->SetCollisionEnabled(ECollisionEnabled::QueryOnly);
+	LeftOverlap->SetCollisionProfileName("OverlapAll");
+	LeftOverlap->SetGenerateOverlapEvents(true);
+	LeftOverlap->OnComponentBeginOverlap.AddDynamic(this, &ABoomBoom::OnSideOverlap);
+	LeftOverlap->SetupAttachment(RootComponent);
+
+	RightOverlap = CreateDefaultSubobject<UBoxComponent>("BoomBoomRightOverlap");
+	RightOverlap->SetCollisionEnabled(ECollisionEnabled::QueryOnly);
+	RightOverlap->SetCollisionProfileName("OverlapAll");
+	RightOverlap->SetGenerateOverlapEvents(true);
+	RightOverlap->OnComponentBeginOverlap.AddDynamic(this, &ABoomBoom::OnSideOverlap);
+	RightOverlap->SetupAttachment(RootComponent);
+
+	BottomOverlap = CreateDefaultSubobject<UBoxComponent>("BoomBoomBottomOverlap");
+	BottomOverlap->SetCollisionEnabled(ECollisionEnabled::QueryOnly);
+	BottomOverlap->SetCollisionProfileName("OverlapAll");
+	BottomOverlap->SetGenerateOverlapEvents(true);
+	BottomOverlap->OnComponentBeginOverlap.AddDynamic(this, &ABoomBoom::OnBottomOverlap);
+	BottomOverlap->SetupAttachment(RootComponent);
 
 	Type = EEnemyType::BoomBoom;
 	Tags.Add("BoomBoom");
@@ -42,8 +67,15 @@ void ABoomBoom::Tick(float DeltaTime)
 
 	if (State == EBoomBoomState::Idle)
 	{
-		StateTimer -= DeltaTime;
-		if (StateTimer <= 0.0f)
+		if (StateTimer > 0.0f)
+		{
+			StateTimer -= DeltaTime;
+			if (StateTimer <= 0.0f)
+			{
+				SetState(EBoomBoomState::Active);
+			}
+		}
+		else
 		{
 			FVector marioLocation = GetWorld()->GetFirstPlayerController()->GetPawn<AMarioCharacter>()->GetActorLocation();
 			FVector boomboomLocation = GetActorLocation();
@@ -57,7 +89,7 @@ void ABoomBoom::Tick(float DeltaTime)
 	else if (State == EBoomBoomState::Active)
 	{
 		FVector location = GetActorLocation();
-		location += Velocity;
+		location += Velocity * DeltaTime;
 		SetActorLocation(location);
 
 		DirectionTimer -= DeltaTime;
@@ -80,9 +112,12 @@ void ABoomBoom::Tick(float DeltaTime)
 			StateTimer -= DeltaTime;
 			if (StateTimer <= 0.0f)
 			{
-				FVector force = FVector(1, 0, 1).GetSafeNormal();
-				if (Velocity.X < 0.0f) force.X *= -1;
-				BoxComponent->AddForce(force * EnemyConstants::BoomBoomJumpStrength);
+				FVector force = FVector(1, 0, 1);
+				if (Velocity.X < 0.0f)
+				{
+					force.X *= -1;
+				}	
+				BoxComponent->AddImpulse(force * EnemyConstants::BoomBoomJumpStrength);
 			}
 		}
 	}
@@ -95,6 +130,34 @@ void ABoomBoom::Tick(float DeltaTime)
 			SetState(EBoomBoomState::Idle);
 		}
 	}
+	else if (State == EBoomBoomState::Dead)
+	{
+		StateTimer -= DeltaTime;
+		if (StateTimer <= 0.0f)
+		{
+			FVector location = GetActorLocation();
+			const int32 numStars = 8;
+			AStarEffect* stars[numStars] = {};
+			FVector endPoints[numStars] = { location + FVector(0.0f,0.0f,160.0f),
+											location + FVector(110.0f,0.0f,110.0f),
+											location + FVector(160.0f,0.0f,0.0f),
+											location + FVector(110.0f,0.0f,-110.0f),
+											location + FVector(0.0f,0.0f,-160.0f),
+											location + FVector(-110.0f,0.0f,-110.0f),
+											location + FVector(-160.0f,0.0f,0.0f),
+											location + FVector(-110.0f,0.0f,110.0f) };
+
+			for (int i = 0; i < numStars; i++)
+			{
+				stars[i] = GetWorld()->SpawnActor<AStarEffect>(StarEffectTemplate, location, FRotator(0.0f, 0.0f, 0.0f));
+				stars[i]->Spawn(endPoints[i]);
+			}
+
+			GetWorld()->SpawnActor<APoofEffect>(PoofEffectTemplate, location, FRotator(0.0f, 0.0f, 0.0f));
+
+			Destroy();
+		}
+	}
 }
 
 void ABoomBoom::SetState(EBoomBoomState state)
@@ -103,7 +166,11 @@ void ABoomBoom::SetState(EBoomBoomState state)
 	{
 		State = state;
 
-		if (State == EBoomBoomState::Active)
+		if (State == EBoomBoomState::Idle)
+		{
+			BoxComponent->SetCollisionProfileName("EnemyDynamic");
+		}
+		else if (State == EBoomBoomState::Active)
 		{
 			StateTimer = FMath::FRandRange(EnemyConstants::BoomBoomJumpTimerMin, EnemyConstants::BoomBoomJumpTimerMax);
 			DirectionTimer = FMath::FRandRange(EnemyConstants::BoomBoomDirectionChangeTimerMin, EnemyConstants::BoomBoomDirectionChangeTimerMax);
@@ -114,6 +181,7 @@ void ABoomBoom::SetState(EBoomBoomState state)
 		}
 		else if (State == EBoomBoomState::Damaged)
 		{
+			BoxComponent->SetCollisionProfileName("EnemyDead");
 			StateTimer = EnemyConstants::BoomBoomDamagedDuration;
 			Lives--;
 			if (Lives == 1)
@@ -123,8 +191,12 @@ void ABoomBoom::SetState(EBoomBoomState state)
 			}
 			else if (Lives == 0)
 			{
-				
+				SetState(EBoomBoomState::Dead);
 			}
+		}
+		else if (State == EBoomBoomState::Dead)
+		{
+			StateTimer = EnemyConstants::BoomBoomDamagedDuration;
 		}
 
 		UpdateFlipbook();
@@ -148,23 +220,28 @@ void ABoomBoom::OnHit(UPrimitiveComponent* HitComponent, AActor* OtherActor, UPr
 		else if (Hit.Normal.Z <= -0.7f)
 		{
 			// Mario landed on BoomBoom
-			if (State == EBoomBoomState::Active)
+			if (State == EBoomBoomState::Active || State == EBoomBoomState::Jumping)
 			{
 				SetState(EBoomBoomState::Damaged);
 				Cast<AMarioCharacter>(OtherActor)->ApplyBounce();
 			}
 		}
 	}
-	else if (OtherActor->ActorHasTag("World"))
+}
+
+void ABoomBoom::OnSideOverlap(UPrimitiveComponent* OverlapComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
+{
+	if (OtherActor->ActorHasTag("World"))
 	{
-		if (Hit.Normal.X <= -0.8f || Hit.Normal.X >= 0.8f)
-		{
-			Velocity *= -1;
-		}
-		else if (State == EBoomBoomState::Jumping && Hit.Normal.Z >= 0.7f)
-		{
-			SetState(EBoomBoomState::Active);
-		}
+		Velocity.X *= -1;
+	}
+}
+
+void ABoomBoom::OnBottomOverlap(UPrimitiveComponent* OverlapComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
+{
+	if (State == EBoomBoomState::Jumping && OtherActor->ActorHasTag("World"))
+	{
+		SetState(EBoomBoomState::Active);
 	}
 }
 
@@ -183,6 +260,10 @@ void ABoomBoom::UpdateFlipbook()
 	else if (State == EBoomBoomState::Damaged)
 	{
 		flipbook = DamagedFlipbook;
+	}
+	else if (State == EBoomBoomState::Dead)
+	{
+		flipbook = DeadFlipbook;
 	}
 
 	FlipbookComponent->SetFlipbook(flipbook);

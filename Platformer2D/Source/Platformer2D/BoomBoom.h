@@ -13,7 +13,8 @@ enum class EBoomBoomState : uint8
 	Idle		UMETA(DisplayName = "Idle"),
 	Active		UMETA(DisplayName = "Active"),
 	Jumping		UMETA(DisplayName = "Jumping"),
-	Damaged		UMETA(DisplayName = "Damaged")
+	Damaged		UMETA(DisplayName = "Damaged"),
+	Dead		UMETA(DisplayName = "Dead")
 };
 
 /**
@@ -27,6 +28,15 @@ class ABoomBoom : public AEnemy
 public:
 	ABoomBoom();
 
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components")
+	class UBoxComponent* LeftOverlap;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components")
+	class UBoxComponent* RightOverlap;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components")
+	class UBoxComponent* BottomOverlap;
+
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "BoomBoom flipbooks")
 	class UPaperFlipbook* IdleFlipbook;
 
@@ -35,6 +45,15 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "BoomBoom flipbooks")
 	class UPaperFlipbook* DamagedFlipbook;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "BoomBoom flipbooks")
+	class UPaperFlipbook* DeadFlipbook;
+
+	UPROPERTY(EditAnyWhere, Category = "BoomBoom Templates")
+	TSubclassOf<class AStarEffect> StarEffectTemplate;
+
+	UPROPERTY(EditAnyWhere, Category = "BoomBoom Templates")
+	TSubclassOf<class APoofEffect> PoofEffectTemplate;
 
 protected:
 	// Called when the game starts or when spawned
@@ -48,6 +67,12 @@ public:
 protected:
 	UFUNCTION()
 	void OnHit(UPrimitiveComponent* HitComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit);
+
+	UFUNCTION()
+	void OnSideOverlap(UPrimitiveComponent* OverlapComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
+
+	UFUNCTION()
+	void OnBottomOverlap(UPrimitiveComponent* OverlapComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
 
 private:
 	void UpdateFlipbook();
