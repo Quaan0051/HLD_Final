@@ -91,7 +91,8 @@ void ABoomBoom::Tick(float DeltaTime)
 		StateTimer -= DeltaTime;
 		if (StateTimer <= 0.0f)
 		{
-			StateTimer = 
+			StateTimer = EnemyConstants::BoomBoomIdleDuration;
+			SetState(EBoomBoomState::Idle);
 		}
 	}
 }
@@ -113,6 +114,7 @@ void ABoomBoom::SetState(EBoomBoomState state)
 		}
 		else if (State == EBoomBoomState::Damaged)
 		{
+			StateTimer = EnemyConstants::BoomBoomDamagedDuration;
 			Lives--;
 			if (Lives == 1)
 			{
@@ -131,6 +133,39 @@ void ABoomBoom::SetState(EBoomBoomState state)
 
 void ABoomBoom::OnHit(UPrimitiveComponent* HitComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit)
 {
+	if (OtherActor->ActorHasTag("MarioCharacter"))
+	{
+		if (Hit.Normal.X <= -0.8f || Hit.Normal.X >= 0.8f)
+		{
+			// BoomBoom hit Mario on the side
+			Cast<AMarioCharacter>(OtherActor)->HandleDamage();
+		}
+		else if (Hit.Normal.Z >= 0.7f)
+		{
+			// BoomBoom landed on Mario
+			Cast<AMarioCharacter>(OtherActor)->HandleDamage();
+		}
+		else if (Hit.Normal.Z <= -0.7f)
+		{
+			// Mario landed on BoomBoom
+			if (State == EBoomBoomState::Active)
+			{
+				SetState(EBoomBoomState::Damaged);
+				Cast<AMarioCharacter>(OtherActor)->ApplyBounce();
+			}
+		}
+	}
+	else if (OtherActor->ActorHasTag("World"))
+	{
+		if (Hit.Normal.X <= -0.8f || Hit.Normal.X >= 0.8f)
+		{
+			Velocity *= -1;
+		}
+		else if (State == EBoomBoomState::Jumping && Hit.Normal.Z >= 0.7f)
+		{
+			SetState(EBoomBoomState::Active);
+		}
+	}
 }
 
 void ABoomBoom::UpdateFlipbook()

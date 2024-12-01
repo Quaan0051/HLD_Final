@@ -13,13 +13,8 @@ enum class EEnemyType : uint8
 	PiranhaPlant	UMETA(DisplayName = "PiranhaPlant"),
 	Goomba			UMETA(DisplayName = "Goomba"),
 	Boo				UMETA(DisplayName = "Boo"),
-<<<<<<< HEAD
 	Thwomp          UMETA(DisplayName = "Thwomp"),
 	BoomBoom		UMETA(DisplayName = "BoomBoom")
-=======
-	Thwomp			UMETA(DisplayName = "Thwomp"),
-	BoomBoom        UMETA(DisplayName = "BoomBoom")
->>>>>>> 746800ae9413e716849f37edd471c1f7e66d38fc
 };
 
 UCLASS()
