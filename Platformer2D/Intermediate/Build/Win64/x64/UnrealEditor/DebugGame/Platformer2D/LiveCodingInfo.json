@@ -10,7 +10,6 @@
 			"DeadActor.gen.cpp.obj",
 			"DonutLift.gen.cpp.obj",
 			"Door.gen.cpp.obj",
-			"Enemy.gen.cpp.obj",
 			"Goomba.gen.cpp.obj",
 			"ItemBox.gen.cpp.obj",
 			"ItemBoxCoin.gen.cpp.obj",
@@ -26,6 +25,7 @@
 			"PiranhaPlant.gen.cpp.obj",
 			"PlatformerGameModeBase.gen.cpp.obj",
 			"PlatformerGameStateBase.gen.cpp.obj",
+			"RotoDisc.gen.cpp.obj",
 			"Boo.cpp.obj",
 			"BreakableBlock.cpp.obj",
 			"BreakableBlockBit.cpp.obj",
@@ -34,7 +34,6 @@
 			"DeadActor.cpp.obj",
 			"DonutLift.cpp.obj",
 			"Door.cpp.obj",
-			"Enemy.cpp.obj",
 			"Goomba.cpp.obj",
 			"ItemBox.cpp.obj",
 			"ItemBoxCoin.cpp.obj",
@@ -51,9 +50,12 @@
 			"Platformer2D.cpp.obj",
 			"PlatformerGameModeBase.cpp.obj",
 			"PlatformerGameStateBase.cpp.obj",
+			"RotoDisc.cpp.obj",
+			"Enemy.gen.cpp.obj",
 			"Platformer2D.init.gen.cpp.obj",
-			"RotoDisc.gen.cpp.obj",
-			"RotoDisc.cpp.obj"
+			"Thwomp.gen.cpp.obj",
+			"Enemy.cpp.obj",
+			"Thwomp.cpp.obj"
 		]
 	}
 }
