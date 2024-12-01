@@ -34,7 +34,6 @@
             "d:\\school\\hld_final\\platformer2d\\intermediate\\build\\win64\\unrealeditor\\inc\\platformer2d\\uht\\door.gen.cpp",
             "d:\\school\\hld_final\\platformer2d\\source\\platformer2d\\door.h",
             "d:\\school\\hld_final\\platformer2d\\intermediate\\build\\win64\\unrealeditor\\inc\\platformer2d\\uht\\door.generated.h",
-            "d:\\school\\hld_final\\platformer2d\\intermediate\\build\\win64\\unrealeditor\\inc\\platformer2d\\uht\\enemy.gen.cpp",
             "d:\\school\\hld_final\\platformer2d\\intermediate\\build\\win64\\unrealeditor\\inc\\platformer2d\\uht\\goomba.gen.cpp",
             "d:\\school\\hld_final\\platformer2d\\source\\platformer2d\\goomba.h",
             "d:\\school\\hld_final\\platformer2d\\intermediate\\build\\win64\\unrealeditor\\inc\\platformer2d\\uht\\goomba.generated.h",
@@ -101,6 +100,9 @@
             "c:\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\gameframework\\gamestatebase.h",
             "c:\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\gamestatebase.generated.h",
             "d:\\school\\hld_final\\platformer2d\\intermediate\\build\\win64\\unrealeditor\\inc\\platformer2d\\uht\\platformergamestatebase.generated.h",
+            "d:\\school\\hld_final\\platformer2d\\intermediate\\build\\win64\\unrealeditor\\inc\\platformer2d\\uht\\rotodisc.gen.cpp",
+            "d:\\school\\hld_final\\platformer2d\\source\\platformer2d\\rotodisc.h",
+            "d:\\school\\hld_final\\platformer2d\\intermediate\\build\\win64\\unrealeditor\\inc\\platformer2d\\uht\\rotodisc.generated.h",
             "d:\\school\\hld_final\\platformer2d\\source\\platformer2d\\boo.cpp",
             "d:\\school\\hld_final\\platformer2d\\source\\platformer2d\\enemyconstants.h",
             "c:\\ue_5.3\\engine\\plugins\\2d\\paper2d\\source\\paper2d\\classes\\paperflipbookcomponent.h",
@@ -132,7 +134,6 @@
             "c:\\ue_5.3\\engine\\plugins\\2d\\paper2d\\intermediate\\build\\win64\\unrealeditor\\inc\\paper2d\\uht\\papersprite.generated.h",
             "d:\\school\\hld_final\\platformer2d\\source\\platformer2d\\platformconstants.h",
             "d:\\school\\hld_final\\platformer2d\\source\\platformer2d\\door.cpp",
-            "d:\\school\\hld_final\\platformer2d\\source\\platformer2d\\enemy.cpp",
             "d:\\school\\hld_final\\platformer2d\\source\\platformer2d\\goomba.cpp",
             "d:\\school\\hld_final\\platformer2d\\source\\platformer2d\\itembox.cpp",
             "d:\\school\\hld_final\\platformer2d\\source\\platformer2d\\itemboxcoin.cpp",
@@ -238,7 +239,8 @@
             "c:\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\kismet\\gameplaystaticstypes.h",
             "c:\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\gameplaystaticstypes.generated.h",
             "c:\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\gameplaystatics.generated.h",
-            "d:\\school\\hld_final\\platformer2d\\source\\platformer2d\\platformergamestatebase.cpp"
+            "d:\\school\\hld_final\\platformer2d\\source\\platformer2d\\platformergamestatebase.cpp",
+            "d:\\school\\hld_final\\platformer2d\\source\\platformer2d\\rotodisc.cpp"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

@@ -14,12 +14,21 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define PLATFORMER2D_Enemy_generated_h
 
+<<<<<<< HEAD
 #define FID_HLD_Final_Platformer2D_Source_Platformer2D_Enemy_h_23_SPARSE_DATA
 #define FID_HLD_Final_Platformer2D_Source_Platformer2D_Enemy_h_23_SPARSE_DATA_PROPERTY_ACCESSORS
 #define FID_HLD_Final_Platformer2D_Source_Platformer2D_Enemy_h_23_EDITOR_ONLY_SPARSE_DATA_PROPERTY_ACCESSORS
 #define FID_HLD_Final_Platformer2D_Source_Platformer2D_Enemy_h_23_RPC_WRAPPERS_NO_PURE_DECLS
 #define FID_HLD_Final_Platformer2D_Source_Platformer2D_Enemy_h_23_ACCESSORS
 #define FID_HLD_Final_Platformer2D_Source_Platformer2D_Enemy_h_23_INCLASS_NO_PURE_DECLS \
+=======
+#define FID_Platformer2D_Source_Platformer2D_Enemy_h_23_SPARSE_DATA
+#define FID_Platformer2D_Source_Platformer2D_Enemy_h_23_SPARSE_DATA_PROPERTY_ACCESSORS
+#define FID_Platformer2D_Source_Platformer2D_Enemy_h_23_EDITOR_ONLY_SPARSE_DATA_PROPERTY_ACCESSORS
+#define FID_Platformer2D_Source_Platformer2D_Enemy_h_23_RPC_WRAPPERS_NO_PURE_DECLS
+#define FID_Platformer2D_Source_Platformer2D_Enemy_h_23_ACCESSORS
+#define FID_Platformer2D_Source_Platformer2D_Enemy_h_23_INCLASS_NO_PURE_DECLS \
+>>>>>>> 746800ae9413e716849f37edd471c1f7e66d38fc
 private: \
 	static void StaticRegisterNativesAEnemy(); \
 	friend struct Z_Construct_UClass_AEnemy_Statics; \
@@ -28,7 +37,11 @@ public: \
 	DECLARE_SERIALIZER(AEnemy)
 
 
+<<<<<<< HEAD
 #define FID_HLD_Final_Platformer2D_Source_Platformer2D_Enemy_h_23_ENHANCED_CONSTRUCTORS \
+=======
+#define FID_Platformer2D_Source_Platformer2D_Enemy_h_23_ENHANCED_CONSTRUCTORS \
+>>>>>>> 746800ae9413e716849f37edd471c1f7e66d38fc
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AEnemy(AEnemy&&); \
@@ -40,6 +53,7 @@ public: \
 	NO_API virtual ~AEnemy();
 
 
+<<<<<<< HEAD
 #define FID_HLD_Final_Platformer2D_Source_Platformer2D_Enemy_h_20_PROLOG
 #define FID_HLD_Final_Platformer2D_Source_Platformer2D_Enemy_h_23_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
@@ -51,6 +65,19 @@ public: \
 	FID_HLD_Final_Platformer2D_Source_Platformer2D_Enemy_h_23_ACCESSORS \
 	FID_HLD_Final_Platformer2D_Source_Platformer2D_Enemy_h_23_INCLASS_NO_PURE_DECLS \
 	FID_HLD_Final_Platformer2D_Source_Platformer2D_Enemy_h_23_ENHANCED_CONSTRUCTORS \
+=======
+#define FID_Platformer2D_Source_Platformer2D_Enemy_h_20_PROLOG
+#define FID_Platformer2D_Source_Platformer2D_Enemy_h_23_GENERATED_BODY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FID_Platformer2D_Source_Platformer2D_Enemy_h_23_SPARSE_DATA \
+	FID_Platformer2D_Source_Platformer2D_Enemy_h_23_SPARSE_DATA_PROPERTY_ACCESSORS \
+	FID_Platformer2D_Source_Platformer2D_Enemy_h_23_EDITOR_ONLY_SPARSE_DATA_PROPERTY_ACCESSORS \
+	FID_Platformer2D_Source_Platformer2D_Enemy_h_23_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_Platformer2D_Source_Platformer2D_Enemy_h_23_ACCESSORS \
+	FID_Platformer2D_Source_Platformer2D_Enemy_h_23_INCLASS_NO_PURE_DECLS \
+	FID_Platformer2D_Source_Platformer2D_Enemy_h_23_ENHANCED_CONSTRUCTORS \
+>>>>>>> 746800ae9413e716849f37edd471c1f7e66d38fc
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
