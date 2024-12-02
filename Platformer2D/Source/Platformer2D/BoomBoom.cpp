@@ -4,11 +4,13 @@
 #include "BoomBoom.h"
 #include "EnemyConstants.h"
 #include "MarioCharacter.h"
+#include "MarioCamera.h"
 #include "StarEffect.h"
 #include "PoofEffect.h"
 #include "PaperFlipbookComponent.h"
 #include "Components/BoxComponent.h"
 #include "Math/UnrealMathUtility.h"
+#include "PlatformerGameModeBase.h"
 
 ABoomBoom::ABoomBoom() :
 	Velocity(),
@@ -242,6 +244,7 @@ void ABoomBoom::OnBottomOverlap(UPrimitiveComponent* OverlapComponent, AActor* O
 	if (State == EBoomBoomState::Jumping && OtherActor->ActorHasTag("World"))
 	{
 		SetState(EBoomBoomState::Active);
+		GetWorld()->GetAuthGameMode<APlatformerGameModeBase>()->ApplyCameraShake();
 	}
 }
 

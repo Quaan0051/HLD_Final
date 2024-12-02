@@ -615,6 +615,8 @@
             "s:\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\character.generated.h",
             "s:\\ue_5.3\\engine\\plugins\\2d\\paper2d\\intermediate\\build\\win64\\unrealeditor\\inc\\paper2d\\uht\\papercharacter.generated.h",
             "s:\\hld_final\\platformer2d\\intermediate\\build\\win64\\unrealeditor\\inc\\platformer2d\\uht\\mariocharacter.generated.h",
+            "s:\\hld_final\\platformer2d\\source\\platformer2d\\mariocamera.h",
+            "s:\\hld_final\\platformer2d\\intermediate\\build\\win64\\unrealeditor\\inc\\platformer2d\\uht\\mariocamera.generated.h",
             "s:\\hld_final\\platformer2d\\source\\platformer2d\\stareffect.h",
             "s:\\hld_final\\platformer2d\\intermediate\\build\\win64\\unrealeditor\\inc\\platformer2d\\uht\\stareffect.generated.h",
             "s:\\hld_final\\platformer2d\\source\\platformer2d\\poofeffect.h",
@@ -834,7 +836,15 @@
             "s:\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\components\\boxcomponent.h",
             "s:\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\components\\shapecomponent.h",
             "s:\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\shapecomponent.generated.h",
-            "s:\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\boxcomponent.generated.h"
+            "s:\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\boxcomponent.generated.h",
+            "s:\\hld_final\\platformer2d\\source\\platformer2d\\platformergamemodebase.h",
+            "s:\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\gameframework\\gamemodebase.h",
+            "s:\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\gameframework\\info.h",
+            "s:\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\info.generated.h",
+            "s:\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\engine\\serverstatreplicator.h",
+            "s:\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\serverstatreplicator.generated.h",
+            "s:\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\gamemodebase.generated.h",
+            "s:\\hld_final\\platformer2d\\intermediate\\build\\win64\\unrealeditor\\inc\\platformer2d\\uht\\platformergamemodebase.generated.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

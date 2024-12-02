@@ -43,7 +43,6 @@ void ALava::OnHit(UPrimitiveComponent* HitComponent, AActor* OtherActor, UPrimit
 {
 	if (OtherActor->ActorHasTag("MarioCharacter"))
 	{
-		Cast<AMarioCharacter>(OtherActor)->ApplyTransformChange(EMarioForm::Small, true);
 		Cast<AMarioCharacter>(OtherActor)->HandleDamage(true);
 	}
 }

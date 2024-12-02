@@ -3,6 +3,7 @@
 	{
 		"Module.Platformer2D.cpp.obj": [
 			"Boo.gen.cpp.obj",
+			"BoomBoom.gen.cpp.obj",
 			"BreakableBlock.gen.cpp.obj",
 			"BreakableBlockBit.gen.cpp.obj",
 			"CoinPickup.gen.cpp.obj",
@@ -24,9 +25,12 @@
 			"MushroomPickup.gen.cpp.obj",
 			"Pickup.gen.cpp.obj",
 			"PiranhaPlant.gen.cpp.obj",
+			"Platformer2D.init.gen.cpp.obj",
 			"PlatformerGameModeBase.gen.cpp.obj",
 			"PlatformerGameStateBase.gen.cpp.obj",
+			"PoofEffect.gen.cpp.obj",
 			"RotoDisc.gen.cpp.obj",
+			"StarEffect.gen.cpp.obj",
 			"Boo.cpp.obj",
 			"BreakableBlock.cpp.obj",
 			"BreakableBlockBit.cpp.obj",
@@ -39,7 +43,6 @@
 			"Goomba.cpp.obj",
 			"ItemBox.cpp.obj",
 			"ItemBoxCoin.cpp.obj",
-			"Lava.cpp.obj",
 			"MarioCamera.cpp.obj",
 			"MarioCharacter.cpp.obj",
 			"MarioController.cpp.obj",
@@ -53,13 +56,10 @@
 			"PlatformerGameModeBase.cpp.obj",
 			"PlatformerGameStateBase.cpp.obj",
 			"RotoDisc.cpp.obj",
-			"BoomBoom.gen.cpp.obj",
-			"Platformer2D.init.gen.cpp.obj",
-			"PoofEffect.gen.cpp.obj",
-			"StarEffect.gen.cpp.obj",
+			"StarEffect.cpp.obj",
 			"BoomBoom.cpp.obj",
-			"PoofEffect.cpp.obj",
-			"StarEffect.cpp.obj"
+			"Lava.cpp.obj",
+			"PoofEffect.cpp.obj"
 		]
 	}
 }

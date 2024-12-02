@@ -25,7 +25,6 @@ APoofEffect::APoofEffect()
 void APoofEffect::BeginPlay()
 {
 	Super::BeginPlay();
-	
 }
 
 void APoofEffect::OnFinishedPlaying()
