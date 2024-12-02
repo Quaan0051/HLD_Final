@@ -55,6 +55,9 @@ public:
 	UPROPERTY(EditAnyWhere, Category = "BoomBoom Templates")
 	TSubclassOf<class APoofEffect> PoofEffectTemplate;
 
+	UPROPERTY(EditAnyWhere, Category = "BoomBoom Templates")
+	TSubclassOf<class AQuestionCircle> QuestionCircleTemplate;
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;

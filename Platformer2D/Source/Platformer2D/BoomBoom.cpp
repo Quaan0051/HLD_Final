@@ -7,6 +7,7 @@
 #include "MarioCamera.h"
 #include "StarEffect.h"
 #include "PoofEffect.h"
+#include "QuestionCircle.h"
 #include "PaperFlipbookComponent.h"
 #include "Components/BoxComponent.h"
 #include "Math/UnrealMathUtility.h"
@@ -156,6 +157,7 @@ void ABoomBoom::Tick(float DeltaTime)
 			}
 
 			GetWorld()->SpawnActor<APoofEffect>(PoofEffectTemplate, location, FRotator(0.0f, 0.0f, 0.0f));
+			GetWorld()->SpawnActor<AQuestionCircle>(QuestionCircleTemplate, location, FRotator(0.0f, 0.0f, 0.0f));
 
 			Destroy();
 		}

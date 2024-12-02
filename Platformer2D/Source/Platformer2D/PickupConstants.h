@@ -9,4 +9,6 @@ namespace PickupConstants
 	constexpr float PickupAnimationDuration = 0.5f;
 
 	constexpr float MushroomSpeed = 125.0f;
+
+	constexpr float QuestionCircleImpulseStrength = 6000.0f;
 }

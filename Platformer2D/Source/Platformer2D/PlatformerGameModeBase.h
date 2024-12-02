@@ -50,6 +50,8 @@ public:
 
 	void SetState(EGameState state);
 
+	void MarioHasWon();
+
 	void ApplyCameraShake();
 
 	void SpawnMarioTransform(FVector location, EMarioForm oldForm, EMarioForm newForm, EMarioDirection direction);

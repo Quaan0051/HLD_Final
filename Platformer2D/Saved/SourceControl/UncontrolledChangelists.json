@@ -16,6 +16,8 @@
 				"S:/HLD_Final/Platformer2D/Content/Flipbooks/FP_PoofEffect.uasset",
 				"S:/HLD_Final/Platformer2D/Content/Blueprints/BP_StarEffect.uasset",
 				"S:/HLD_Final/Platformer2D/Content/Blueprints/BP_PoofEffect.uasset",
+				"S:/HLD_Final/Platformer2D/Content/Blueprints/BP_QuestionCircle.uasset",
+				"S:/HLD_Final/Platformer2D/Content/Widgets/HUDWidgetBlueprint.uasset",
 				"S:/HLD_Final/Platformer2D/Content/Sprites/Misc/FP_StarEffect.uasset",
 				"S:/HLD_Final/Platformer2D/Content/Sprites/Misc/FP_PoofEffect.uasset",
 				"S:/HLD_Final/Platformer2D/Content/Sprites/Enemies/FP_BoomBoomDead.uasset",

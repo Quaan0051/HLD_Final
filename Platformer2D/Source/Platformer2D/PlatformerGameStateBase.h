@@ -25,5 +25,8 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Game")
 	bool IsGameOver;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Game")
+	bool IsGameWon;
 	
 };

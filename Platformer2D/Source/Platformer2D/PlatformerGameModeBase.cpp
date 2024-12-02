@@ -143,6 +143,13 @@ void APlatformerGameModeBase::Tick(float DeltaTime)
 	}
 	else if (State == EGameState::FadeHold)
 	{
+		APlatformerGameStateBase* gameState = GetGameState<APlatformerGameStateBase>();
+
+		if (gameState->IsGameWon)
+		{
+			PauseActors();
+		}
+
 		FadeHoldTimer -= DeltaTime;
 
 		if (FadeHoldTimer <= 0.0f)
@@ -230,6 +237,13 @@ void APlatformerGameModeBase::SetState(EGameState state)
 			FadeInOutTimer = GameConstants::BlackOverlayFadeInOutDuration;
 		}
 	}
+}
+
+void APlatformerGameModeBase::MarioHasWon()
+{
+	APlatformerGameStateBase* gameState = GetGameState<APlatformerGameStateBase>();
+	gameState->IsGameWon = true;
+	SetState(EGameState::FadeIn);
 }
 
 void APlatformerGameModeBase::ApplyCameraShake()

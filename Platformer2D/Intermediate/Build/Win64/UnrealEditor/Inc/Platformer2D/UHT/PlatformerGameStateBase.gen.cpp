@@ -41,6 +41,11 @@ void EmptyLinkFunctionForGeneratedCodePlatformerGameStateBase() {}
 #endif
 		static void NewProp_IsGameOver_SetBit(void* Obj);
 		static const UECodeGen_Private::FBoolPropertyParams NewProp_IsGameOver;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_IsGameWon_MetaData[];
+#endif
+		static void NewProp_IsGameWon_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_IsGameWon;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
@@ -86,10 +91,22 @@ void EmptyLinkFunctionForGeneratedCodePlatformerGameStateBase() {}
 		((APlatformerGameStateBase*)Obj)->IsGameOver = 1;
 	}
 	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_APlatformerGameStateBase_Statics::NewProp_IsGameOver = { "IsGameOver", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(APlatformerGameStateBase), &Z_Construct_UClass_APlatformerGameStateBase_Statics::NewProp_IsGameOver_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_APlatformerGameStateBase_Statics::NewProp_IsGameOver_MetaData), Z_Construct_UClass_APlatformerGameStateBase_Statics::NewProp_IsGameOver_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APlatformerGameStateBase_Statics::NewProp_IsGameWon_MetaData[] = {
+		{ "Category", "Game" },
+		{ "ModuleRelativePath", "PlatformerGameStateBase.h" },
+	};
+#endif
+	void Z_Construct_UClass_APlatformerGameStateBase_Statics::NewProp_IsGameWon_SetBit(void* Obj)
+	{
+		((APlatformerGameStateBase*)Obj)->IsGameWon = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_APlatformerGameStateBase_Statics::NewProp_IsGameWon = { "IsGameWon", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(APlatformerGameStateBase), &Z_Construct_UClass_APlatformerGameStateBase_Statics::NewProp_IsGameWon_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_APlatformerGameStateBase_Statics::NewProp_IsGameWon_MetaData), Z_Construct_UClass_APlatformerGameStateBase_Statics::NewProp_IsGameWon_MetaData) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_APlatformerGameStateBase_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlatformerGameStateBase_Statics::NewProp_TimeRemaining,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlatformerGameStateBase_Statics::NewProp_BlackOverlayAlpha,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlatformerGameStateBase_Statics::NewProp_IsGameOver,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlatformerGameStateBase_Statics::NewProp_IsGameWon,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_APlatformerGameStateBase_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<APlatformerGameStateBase>::IsAbstract,
@@ -129,9 +146,9 @@ void EmptyLinkFunctionForGeneratedCodePlatformerGameStateBase() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_PlatformerGameStateBase_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_APlatformerGameStateBase, APlatformerGameStateBase::StaticClass, TEXT("APlatformerGameStateBase"), &Z_Registration_Info_UClass_APlatformerGameStateBase, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(APlatformerGameStateBase), 2983539197U) },
+		{ Z_Construct_UClass_APlatformerGameStateBase, APlatformerGameStateBase::StaticClass, TEXT("APlatformerGameStateBase"), &Z_Registration_Info_UClass_APlatformerGameStateBase, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(APlatformerGameStateBase), 2687227917U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_PlatformerGameStateBase_h_2166076697(TEXT("/Script/Platformer2D"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_PlatformerGameStateBase_h_2007209256(TEXT("/Script/Platformer2D"),
 		Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_PlatformerGameStateBase_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_PlatformerGameStateBase_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

@@ -21,6 +21,7 @@ void EmptyLinkFunctionForGeneratedCodeBoomBoom() {}
 	PLATFORMER2D_API UClass* Z_Construct_UClass_ABoomBoom_NoRegister();
 	PLATFORMER2D_API UClass* Z_Construct_UClass_AEnemy();
 	PLATFORMER2D_API UClass* Z_Construct_UClass_APoofEffect_NoRegister();
+	PLATFORMER2D_API UClass* Z_Construct_UClass_AQuestionCircle_NoRegister();
 	PLATFORMER2D_API UClass* Z_Construct_UClass_AStarEffect_NoRegister();
 	PLATFORMER2D_API UEnum* Z_Construct_UEnum_Platformer2D_EBoomBoomState();
 	UPackage* Z_Construct_UPackage__Script_Platformer2D();
@@ -428,6 +429,10 @@ void EmptyLinkFunctionForGeneratedCodeBoomBoom() {}
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_PoofEffectTemplate_MetaData[];
 #endif
 		static const UECodeGen_Private::FClassPropertyParams NewProp_PoofEffectTemplate;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_QuestionCircleTemplate_MetaData[];
+#endif
+		static const UECodeGen_Private::FClassPropertyParams NewProp_QuestionCircleTemplate;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
@@ -518,6 +523,13 @@ void EmptyLinkFunctionForGeneratedCodeBoomBoom() {}
 	};
 #endif
 	const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_ABoomBoom_Statics::NewProp_PoofEffectTemplate = { "PoofEffectTemplate", nullptr, (EPropertyFlags)0x0014000000000001, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABoomBoom, PoofEffectTemplate), Z_Construct_UClass_UClass, Z_Construct_UClass_APoofEffect_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABoomBoom_Statics::NewProp_PoofEffectTemplate_MetaData), Z_Construct_UClass_ABoomBoom_Statics::NewProp_PoofEffectTemplate_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABoomBoom_Statics::NewProp_QuestionCircleTemplate_MetaData[] = {
+		{ "Category", "BoomBoom Templates" },
+		{ "ModuleRelativePath", "BoomBoom.h" },
+	};
+#endif
+	const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_ABoomBoom_Statics::NewProp_QuestionCircleTemplate = { "QuestionCircleTemplate", nullptr, (EPropertyFlags)0x0014000000000001, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABoomBoom, QuestionCircleTemplate), Z_Construct_UClass_UClass, Z_Construct_UClass_AQuestionCircle_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABoomBoom_Statics::NewProp_QuestionCircleTemplate_MetaData), Z_Construct_UClass_ABoomBoom_Statics::NewProp_QuestionCircleTemplate_MetaData) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ABoomBoom_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABoomBoom_Statics::NewProp_LeftOverlap,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABoomBoom_Statics::NewProp_RightOverlap,
@@ -528,6 +540,7 @@ void EmptyLinkFunctionForGeneratedCodeBoomBoom() {}
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABoomBoom_Statics::NewProp_DeadFlipbook,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABoomBoom_Statics::NewProp_StarEffectTemplate,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABoomBoom_Statics::NewProp_PoofEffectTemplate,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABoomBoom_Statics::NewProp_QuestionCircleTemplate,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ABoomBoom_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ABoomBoom>::IsAbstract,
@@ -571,9 +584,9 @@ void EmptyLinkFunctionForGeneratedCodeBoomBoom() {}
 		{ EBoomBoomState_StaticEnum, TEXT("EBoomBoomState"), &Z_Registration_Info_UEnum_EBoomBoomState, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 3823728237U) },
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_BoomBoom_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_ABoomBoom, ABoomBoom::StaticClass, TEXT("ABoomBoom"), &Z_Registration_Info_UClass_ABoomBoom, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABoomBoom), 1471346796U) },
+		{ Z_Construct_UClass_ABoomBoom, ABoomBoom::StaticClass, TEXT("ABoomBoom"), &Z_Registration_Info_UClass_ABoomBoom, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABoomBoom), 403983682U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_BoomBoom_h_1962546715(TEXT("/Script/Platformer2D"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_BoomBoom_h_2337284406(TEXT("/Script/Platformer2D"),
 		Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_BoomBoom_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_BoomBoom_h_Statics::ClassInfo),
 		nullptr, 0,
 		Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_BoomBoom_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_BoomBoom_h_Statics::EnumInfo));
