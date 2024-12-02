@@ -231,5 +231,11 @@
     <ClInclude Include="..\..\Source\Platformer2D\StarEffect.h">
       <Filter>Source\Platformer2D</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\Platformer2D\Thwomp.cpp">
+      <Filter>Source\Platformer2D</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Platformer2D\Thwomp.h">
+      <Filter>Source\Platformer2D</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
