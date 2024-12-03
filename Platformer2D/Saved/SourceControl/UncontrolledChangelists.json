@@ -5,6 +5,14 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Default Uncontrolled Changelist",
 			"files": [
+<<<<<<< HEAD
+=======
+				"D:/School/HLD_Final/Platformer2D/Content/Flipbooks/FP_Thwomp.uasset",
+				"D:/School/HLD_Final/Platformer2D/Content/Blueprints/BP_Thwomp.uasset",
+				"D:/School/HLD_Final/Platformer2D/Content/Levels/LevelOne.umap",
+				"D:/School/HLD_Final/Platformer2D/Content/Tilemaps/FortressTiles_TileMap.uasset",
+				"D:/School/HLD_Final/Platformer2D/Content/Blueprints/BP_RotoDisc.uasset",
+>>>>>>> 73dcf9f4d4683600257db8c5ad1ea67e4f3d6b89
 				"S:/HLD_Final/Platformer2D/Content/Flipbooks/FP_BoomBoomIdle.uasset",
 				"S:/HLD_Final/Platformer2D/Content/Flipbooks/FP_BoomBoomActive.uasset",
 				"S:/HLD_Final/Platformer2D/Content/Flipbooks/FP_BoomBoomDamaged.uasset",
