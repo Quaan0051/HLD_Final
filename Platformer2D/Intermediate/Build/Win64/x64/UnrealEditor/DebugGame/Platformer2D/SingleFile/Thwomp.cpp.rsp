@@ -1,8 +1,8 @@
-"D:\School\HLD_Final\Platformer2D\Source\Platformer2D\Thwomp.cpp"
-/FI"D:\School\HLD_Final\Platformer2D\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\Platformer2D\Definitions.Platformer2D.h"
-/Fo"D:\School\HLD_Final\Platformer2D\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\Platformer2D\SingleFile\Thwomp.cpp.obj"
-/sourceDependencies "D:\School\HLD_Final\Platformer2D\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\Platformer2D\SingleFile\Thwomp.cpp.dep.json"
-@"D:\School\HLD_Final\Platformer2D\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\Platformer2D\Platformer2D.Shared.rsp"
+"C:\HLD_Final\Platformer2D\Source\Platformer2D\Thwomp.cpp"
+/FI"C:\HLD_Final\Platformer2D\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\Platformer2D\Definitions.Platformer2D.h"
+/Fo"C:\HLD_Final\Platformer2D\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\Platformer2D\SingleFile\Thwomp.cpp.obj"
+/sourceDependencies "C:\HLD_Final\Platformer2D\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\Platformer2D\SingleFile\Thwomp.cpp.dep.json"
+@"C:\HLD_Final\Platformer2D\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\Platformer2D\Platformer2D.Shared.rsp"
 /Zc:inline
 /nologo
 /Oi

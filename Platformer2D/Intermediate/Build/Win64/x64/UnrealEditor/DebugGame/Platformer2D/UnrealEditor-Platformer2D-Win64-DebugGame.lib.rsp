@@ -6,10 +6,9 @@
 /NAME:"UnrealEditor-Platformer2D-Win64-DebugGame.dll"
 /IGNORE:4221
 /NODEFAULTLIB
-"D:\School\HLD_Final\Platformer2D\Intermediate\Build\Win64\x64\Platformer2DEditor\DebugGame\UnrealEd\SharedPCH.UnrealEd.NonOptimized.Cpp20.h.obj"
-"D:\School\HLD_Final\Platformer2D\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\Platformer2D\Module.Platformer2D.cpp.obj"
-"D:\School\HLD_Final\Platformer2D\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\Platformer2D\Thwomp.cpp.obj"
-"D:\School\HLD_Final\Platformer2D\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\Platformer2D\Platformer2D.init.gen.cpp.obj"
-"D:\School\HLD_Final\Platformer2D\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\Platformer2D\Thwomp.gen.cpp.obj"
-"D:\School\HLD_Final\Platformer2D\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\Platformer2D\Default.rc2.res"
-/OUT:"D:\School\HLD_Final\Platformer2D\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\Platformer2D\UnrealEditor-Platformer2D-Win64-DebugGame.lib"
+"C:\HLD_Final\Platformer2D\Intermediate\Build\Win64\x64\Platformer2DEditor\DebugGame\UnrealEd\SharedPCH.UnrealEd.NonOptimized.Cpp20.h.obj"
+"C:\HLD_Final\Platformer2D\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\Platformer2D\Module.Platformer2D.cpp.obj"
+"C:\HLD_Final\Platformer2D\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\Platformer2D\Platformer2D.init.gen.cpp.obj"
+"C:\HLD_Final\Platformer2D\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\Platformer2D\Thwomp.gen.cpp.obj"
+"C:\HLD_Final\Platformer2D\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\Platformer2D\Default.rc2.res"
+/OUT:"C:\HLD_Final\Platformer2D\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\Platformer2D\UnrealEditor-Platformer2D-Win64-DebugGame.lib"

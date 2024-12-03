@@ -6,6 +6,7 @@
 			"BoomBoom.gen.cpp.obj",
 			"BreakableBlock.gen.cpp.obj",
 			"BreakableBlockBit.gen.cpp.obj",
+			"ChainChomp.gen.cpp.obj",
 			"CoinPickup.gen.cpp.obj",
 			"CoinSwitch.gen.cpp.obj",
 			"DeadActor.gen.cpp.obj",
@@ -32,10 +33,12 @@
 			"QuestionCircle.gen.cpp.obj",
 			"RotoDisc.gen.cpp.obj",
 			"StarEffect.gen.cpp.obj",
+			"Thwomp.gen.cpp.obj",
 			"Boo.cpp.obj",
 			"BoomBoom.cpp.obj",
 			"BreakableBlock.cpp.obj",
 			"BreakableBlockBit.cpp.obj",
+			"ChainChomp.cpp.obj",
 			"CoinPickup.cpp.obj",
 			"CoinSwitch.cpp.obj",
 			"DeadActor.cpp.obj",
@@ -62,7 +65,6 @@
 			"QuestionCircle.cpp.obj",
 			"RotoDisc.cpp.obj",
 			"StarEffect.cpp.obj",
-			"Thwomp.gen.cpp.obj",
 			"Thwomp.cpp.obj"
 		]
 	}

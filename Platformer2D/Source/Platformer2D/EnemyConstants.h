@@ -20,7 +20,7 @@ namespace EnemyConstants
 	constexpr float BooZSpeed = 120.0f;
 
 	// Thwomp constants
-	constexpr float ThwompFallSpeed = 350.0f;
+	constexpr float ThwompFallSpeed = 400.0f;
 	constexpr float ThwompRiseSpeed = 100.0f;
 	constexpr float ThwompDelay = 3.0f;
 
