@@ -54,6 +54,12 @@
     <ClInclude Include="..\..\Source\Platformer2D\BreakableBlockBit.h">
       <Filter>Source\Platformer2D</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\Platformer2D\ChainChomp.cpp">
+      <Filter>Source\Platformer2D</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Platformer2D\ChainChomp.h">
+      <Filter>Source\Platformer2D</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\Platformer2D\CoinPickup.cpp">
       <Filter>Source\Platformer2D</Filter>
     </ClCompile>
@@ -229,12 +235,6 @@
       <Filter>Source\Platformer2D</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\Platformer2D\StarEffect.h">
-      <Filter>Source\Platformer2D</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Source\Platformer2D\Thwomp.cpp">
-      <Filter>Source\Platformer2D</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\Platformer2D\Thwomp.h">
       <Filter>Source\Platformer2D</Filter>
     </ClInclude>
   </ItemGroup>

@@ -17,13 +17,13 @@ void EmptyLinkFunctionForGeneratedCodePlatformer2D_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0x0A307ACD,
-				0x3FD85A0A,
+				0xA8386F98,
+				0xA67F614E,
 				METADATA_PARAMS(0, nullptr)
 			};
 			UECodeGen_Private::ConstructUPackage(Z_Registration_Info_UPackage__Script_Platformer2D.OuterSingleton, PackageParams);
 		}
 		return Z_Registration_Info_UPackage__Script_Platformer2D.OuterSingleton;
 	}
-	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_Platformer2D(Z_Construct_UPackage__Script_Platformer2D, TEXT("/Script/Platformer2D"), Z_Registration_Info_UPackage__Script_Platformer2D, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0x0A307ACD, 0x3FD85A0A));
+	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_Platformer2D(Z_Construct_UPackage__Script_Platformer2D, TEXT("/Script/Platformer2D"), Z_Registration_Info_UPackage__Script_Platformer2D, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0xA8386F98, 0xA67F614E));
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
