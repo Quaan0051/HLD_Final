@@ -17,6 +17,7 @@ struct FHitResult;
 #endif
 #define PLATFORMER2D_RotoDisc_generated_h
 
+<<<<<<< HEAD
 #define FID_HLD_Final_Platformer2D_Source_Platformer2D_RotoDisc_h_19_SPARSE_DATA
 #define FID_HLD_Final_Platformer2D_Source_Platformer2D_RotoDisc_h_19_SPARSE_DATA_PROPERTY_ACCESSORS
 #define FID_HLD_Final_Platformer2D_Source_Platformer2D_RotoDisc_h_19_EDITOR_ONLY_SPARSE_DATA_PROPERTY_ACCESSORS
@@ -27,6 +28,14 @@ struct FHitResult;
 
 #define FID_HLD_Final_Platformer2D_Source_Platformer2D_RotoDisc_h_19_ACCESSORS
 #define FID_HLD_Final_Platformer2D_Source_Platformer2D_RotoDisc_h_19_INCLASS_NO_PURE_DECLS \
+=======
+#define FID_Platformer2D_Source_Platformer2D_RotoDisc_h_19_SPARSE_DATA
+#define FID_Platformer2D_Source_Platformer2D_RotoDisc_h_19_SPARSE_DATA_PROPERTY_ACCESSORS
+#define FID_Platformer2D_Source_Platformer2D_RotoDisc_h_19_EDITOR_ONLY_SPARSE_DATA_PROPERTY_ACCESSORS
+#define FID_Platformer2D_Source_Platformer2D_RotoDisc_h_19_RPC_WRAPPERS_NO_PURE_DECLS
+#define FID_Platformer2D_Source_Platformer2D_RotoDisc_h_19_ACCESSORS
+#define FID_Platformer2D_Source_Platformer2D_RotoDisc_h_19_INCLASS_NO_PURE_DECLS \
+>>>>>>> 145885524313b9fd6798e01ec0efc253f4245b2c
 private: \
 	static void StaticRegisterNativesARotoDisc(); \
 	friend struct Z_Construct_UClass_ARotoDisc_Statics; \
@@ -35,7 +44,7 @@ public: \
 	DECLARE_SERIALIZER(ARotoDisc)
 
 
-#define FID_HLD_Final_Platformer2D_Source_Platformer2D_RotoDisc_h_19_ENHANCED_CONSTRUCTORS \
+#define FID_Platformer2D_Source_Platformer2D_RotoDisc_h_19_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API ARotoDisc(ARotoDisc&&); \
@@ -47,17 +56,17 @@ public: \
 	NO_API virtual ~ARotoDisc();
 
 
-#define FID_HLD_Final_Platformer2D_Source_Platformer2D_RotoDisc_h_16_PROLOG
-#define FID_HLD_Final_Platformer2D_Source_Platformer2D_RotoDisc_h_19_GENERATED_BODY \
+#define FID_Platformer2D_Source_Platformer2D_RotoDisc_h_16_PROLOG
+#define FID_Platformer2D_Source_Platformer2D_RotoDisc_h_19_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_HLD_Final_Platformer2D_Source_Platformer2D_RotoDisc_h_19_SPARSE_DATA \
-	FID_HLD_Final_Platformer2D_Source_Platformer2D_RotoDisc_h_19_SPARSE_DATA_PROPERTY_ACCESSORS \
-	FID_HLD_Final_Platformer2D_Source_Platformer2D_RotoDisc_h_19_EDITOR_ONLY_SPARSE_DATA_PROPERTY_ACCESSORS \
-	FID_HLD_Final_Platformer2D_Source_Platformer2D_RotoDisc_h_19_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_HLD_Final_Platformer2D_Source_Platformer2D_RotoDisc_h_19_ACCESSORS \
-	FID_HLD_Final_Platformer2D_Source_Platformer2D_RotoDisc_h_19_INCLASS_NO_PURE_DECLS \
-	FID_HLD_Final_Platformer2D_Source_Platformer2D_RotoDisc_h_19_ENHANCED_CONSTRUCTORS \
+	FID_Platformer2D_Source_Platformer2D_RotoDisc_h_19_SPARSE_DATA \
+	FID_Platformer2D_Source_Platformer2D_RotoDisc_h_19_SPARSE_DATA_PROPERTY_ACCESSORS \
+	FID_Platformer2D_Source_Platformer2D_RotoDisc_h_19_EDITOR_ONLY_SPARSE_DATA_PROPERTY_ACCESSORS \
+	FID_Platformer2D_Source_Platformer2D_RotoDisc_h_19_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_Platformer2D_Source_Platformer2D_RotoDisc_h_19_ACCESSORS \
+	FID_Platformer2D_Source_Platformer2D_RotoDisc_h_19_INCLASS_NO_PURE_DECLS \
+	FID_Platformer2D_Source_Platformer2D_RotoDisc_h_19_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -65,7 +74,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> PLATFORMER2D_API UClass* StaticClass<class ARotoDisc>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_HLD_Final_Platformer2D_Source_Platformer2D_RotoDisc_h
+#define CURRENT_FILE_ID FID_Platformer2D_Source_Platformer2D_RotoDisc_h
 
 
 #define FOREACH_ENUM_EROTODISCDIRECTION(op) \

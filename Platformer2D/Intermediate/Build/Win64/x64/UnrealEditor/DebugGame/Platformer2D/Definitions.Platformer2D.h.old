@@ -1,4 +1,4 @@
-#include "D:/School/HLD_Final/Platformer2D/Intermediate/Build/Win64/x64/Platformer2DEditor/DebugGame/UnrealEd/SharedDefinitions.UnrealEd.NonOptimized.Cpp20.h"
+#include "C:/HLD_Final/Platformer2D/Intermediate/Build/Win64/x64/Platformer2DEditor/DebugGame/UnrealEd/SharedDefinitions.UnrealEd.NonOptimized.Cpp20.h"
 #undef UE_IS_ENGINE_MODULE
 #undef DEPRECATED_FORGAME
 #define DEPRECATED_FORGAME DEPRECATED
@@ -21,6 +21,7 @@
 #define IMPLEMENT_SIGNING_KEY_REGISTRATION() 
 #define DEPRECATED_FORGAME DEPRECATED
 #define UE_DEPRECATED_FORGAME UE_DEPRECATED
+#define CABLECOMPONENT_API DLLIMPORT
 #define PAPER2D_API DLLIMPORT
 #define PLATFORMER2D_API DLLEXPORT
 #define ENHANCEDINPUT_API DLLIMPORT
