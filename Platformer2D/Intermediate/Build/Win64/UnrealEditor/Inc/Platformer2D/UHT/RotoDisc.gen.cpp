@@ -6,11 +6,15 @@
 
 #include "UObject/GeneratedCppIncludes.h"
 #include "Platformer2D/RotoDisc.h"
+#include "../../Source/Runtime/Engine/Classes/Engine/HitResult.h"
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeRotoDisc() {}
 // Cross Module References
 	ENGINE_API UClass* Z_Construct_UClass_AActor();
+	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UBoxComponent_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_UPrimitiveComponent_NoRegister();
+	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FHitResult();
 	PAPER2D_API UClass* Z_Construct_UClass_UPaperFlipbookComponent_NoRegister();
 	PAPER2D_API UClass* Z_Construct_UClass_UPaperSpriteComponent_NoRegister();
 	PLATFORMER2D_API UClass* Z_Construct_UClass_ARotoDisc();
@@ -73,8 +77,109 @@ void EmptyLinkFunctionForGeneratedCodeRotoDisc() {}
 		}
 		return Z_Registration_Info_UEnum_ERotoDiscDirection.InnerSingleton;
 	}
+	DEFINE_FUNCTION(ARotoDisc::execOnOverlap)
+	{
+		P_GET_OBJECT(UPrimitiveComponent,Z_Param_OverlapComponent);
+		P_GET_OBJECT(AActor,Z_Param_OtherActor);
+		P_GET_OBJECT(UPrimitiveComponent,Z_Param_OtherComp);
+		P_GET_PROPERTY(FIntProperty,Z_Param_OtherBodyIndex);
+		P_GET_UBOOL(Z_Param_bFromSweep);
+		P_GET_STRUCT_REF(FHitResult,Z_Param_Out_SweepResult);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->OnOverlap(Z_Param_OverlapComponent,Z_Param_OtherActor,Z_Param_OtherComp,Z_Param_OtherBodyIndex,Z_Param_bFromSweep,Z_Param_Out_SweepResult);
+		P_NATIVE_END;
+	}
 	void ARotoDisc::StaticRegisterNativesARotoDisc()
 	{
+		UClass* Class = ARotoDisc::StaticClass();
+		static const FNameNativePtrPair Funcs[] = {
+			{ "OnOverlap", &ARotoDisc::execOnOverlap },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_ARotoDisc_OnOverlap_Statics
+	{
+		struct RotoDisc_eventOnOverlap_Parms
+		{
+			UPrimitiveComponent* OverlapComponent;
+			AActor* OtherActor;
+			UPrimitiveComponent* OtherComp;
+			int32 OtherBodyIndex;
+			bool bFromSweep;
+			FHitResult SweepResult;
+		};
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_OverlapComponent_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_OverlapComponent;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_OtherActor;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_OtherComp_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_OtherComp;
+		static const UECodeGen_Private::FIntPropertyParams NewProp_OtherBodyIndex;
+		static void NewProp_bFromSweep_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_bFromSweep;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_SweepResult_MetaData[];
+#endif
+		static const UECodeGen_Private::FStructPropertyParams NewProp_SweepResult;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ARotoDisc_OnOverlap_Statics::NewProp_OverlapComponent_MetaData[] = {
+		{ "EditInline", "true" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_ARotoDisc_OnOverlap_Statics::NewProp_OverlapComponent = { "OverlapComponent", nullptr, (EPropertyFlags)0x0010000000080080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(RotoDisc_eventOnOverlap_Parms, OverlapComponent), Z_Construct_UClass_UPrimitiveComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ARotoDisc_OnOverlap_Statics::NewProp_OverlapComponent_MetaData), Z_Construct_UFunction_ARotoDisc_OnOverlap_Statics::NewProp_OverlapComponent_MetaData) };
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_ARotoDisc_OnOverlap_Statics::NewProp_OtherActor = { "OtherActor", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(RotoDisc_eventOnOverlap_Parms, OtherActor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(0, nullptr) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ARotoDisc_OnOverlap_Statics::NewProp_OtherComp_MetaData[] = {
+		{ "EditInline", "true" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_ARotoDisc_OnOverlap_Statics::NewProp_OtherComp = { "OtherComp", nullptr, (EPropertyFlags)0x0010000000080080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(RotoDisc_eventOnOverlap_Parms, OtherComp), Z_Construct_UClass_UPrimitiveComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ARotoDisc_OnOverlap_Statics::NewProp_OtherComp_MetaData), Z_Construct_UFunction_ARotoDisc_OnOverlap_Statics::NewProp_OtherComp_MetaData) };
+	const UECodeGen_Private::FIntPropertyParams Z_Construct_UFunction_ARotoDisc_OnOverlap_Statics::NewProp_OtherBodyIndex = { "OtherBodyIndex", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(RotoDisc_eventOnOverlap_Parms, OtherBodyIndex), METADATA_PARAMS(0, nullptr) };
+	void Z_Construct_UFunction_ARotoDisc_OnOverlap_Statics::NewProp_bFromSweep_SetBit(void* Obj)
+	{
+		((RotoDisc_eventOnOverlap_Parms*)Obj)->bFromSweep = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_ARotoDisc_OnOverlap_Statics::NewProp_bFromSweep = { "bFromSweep", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(RotoDisc_eventOnOverlap_Parms), &Z_Construct_UFunction_ARotoDisc_OnOverlap_Statics::NewProp_bFromSweep_SetBit, METADATA_PARAMS(0, nullptr) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ARotoDisc_OnOverlap_Statics::NewProp_SweepResult_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_ARotoDisc_OnOverlap_Statics::NewProp_SweepResult = { "SweepResult", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(RotoDisc_eventOnOverlap_Parms, SweepResult), Z_Construct_UScriptStruct_FHitResult, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ARotoDisc_OnOverlap_Statics::NewProp_SweepResult_MetaData), Z_Construct_UFunction_ARotoDisc_OnOverlap_Statics::NewProp_SweepResult_MetaData) }; // 1891709922
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ARotoDisc_OnOverlap_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ARotoDisc_OnOverlap_Statics::NewProp_OverlapComponent,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ARotoDisc_OnOverlap_Statics::NewProp_OtherActor,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ARotoDisc_OnOverlap_Statics::NewProp_OtherComp,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ARotoDisc_OnOverlap_Statics::NewProp_OtherBodyIndex,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ARotoDisc_OnOverlap_Statics::NewProp_bFromSweep,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ARotoDisc_OnOverlap_Statics::NewProp_SweepResult,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ARotoDisc_OnOverlap_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "RotoDisc.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ARotoDisc_OnOverlap_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ARotoDisc, nullptr, "OnOverlap", nullptr, nullptr, Z_Construct_UFunction_ARotoDisc_OnOverlap_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ARotoDisc_OnOverlap_Statics::PropPointers), sizeof(Z_Construct_UFunction_ARotoDisc_OnOverlap_Statics::RotoDisc_eventOnOverlap_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00480401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ARotoDisc_OnOverlap_Statics::Function_MetaDataParams), Z_Construct_UFunction_ARotoDisc_OnOverlap_Statics::Function_MetaDataParams) };
+	static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_ARotoDisc_OnOverlap_Statics::PropPointers) < 2048);
+	static_assert(sizeof(Z_Construct_UFunction_ARotoDisc_OnOverlap_Statics::RotoDisc_eventOnOverlap_Parms) < MAX_uint16);
+	UFunction* Z_Construct_UFunction_ARotoDisc_OnOverlap()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ARotoDisc_OnOverlap_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	IMPLEMENT_CLASS_NO_AUTO_REGISTRATION(ARotoDisc);
 	UClass* Z_Construct_UClass_ARotoDisc_NoRegister()
@@ -84,6 +189,7 @@ void EmptyLinkFunctionForGeneratedCodeRotoDisc() {}
 	struct Z_Construct_UClass_ARotoDisc_Statics
 	{
 		static UObject* (*const DependentSingletons[])();
+		static const FClassFunctionLinkInfo FuncInfo[];
 #if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
@@ -121,6 +227,10 @@ void EmptyLinkFunctionForGeneratedCodeRotoDisc() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_Platformer2D,
 	};
 	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_ARotoDisc_Statics::DependentSingletons) < 16);
+	const FClassFunctionLinkInfo Z_Construct_UClass_ARotoDisc_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_ARotoDisc_OnOverlap, "OnOverlap" }, // 229963979
+	};
+	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_ARotoDisc_Statics::FuncInfo) < 2048);
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ARotoDisc_Statics::Class_MetaDataParams[] = {
 		{ "IncludePath", "RotoDisc.h" },
@@ -197,11 +307,11 @@ void EmptyLinkFunctionForGeneratedCodeRotoDisc() {}
 		"Engine",
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
-		nullptr,
+		FuncInfo,
 		Z_Construct_UClass_ARotoDisc_Statics::PropPointers,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
-		0,
+		UE_ARRAY_COUNT(FuncInfo),
 		UE_ARRAY_COUNT(Z_Construct_UClass_ARotoDisc_Statics::PropPointers),
 		0,
 		0x009000A4u,
@@ -231,9 +341,9 @@ void EmptyLinkFunctionForGeneratedCodeRotoDisc() {}
 		{ ERotoDiscDirection_StaticEnum, TEXT("ERotoDiscDirection"), &Z_Registration_Info_UEnum_ERotoDiscDirection, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1403460620U) },
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_RotoDisc_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_ARotoDisc, ARotoDisc::StaticClass, TEXT("ARotoDisc"), &Z_Registration_Info_UClass_ARotoDisc, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ARotoDisc), 823735408U) },
+		{ Z_Construct_UClass_ARotoDisc, ARotoDisc::StaticClass, TEXT("ARotoDisc"), &Z_Registration_Info_UClass_ARotoDisc, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ARotoDisc), 525420634U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_RotoDisc_h_1736444674(TEXT("/Script/Platformer2D"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_RotoDisc_h_3184857623(TEXT("/Script/Platformer2D"),
 		Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_RotoDisc_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_RotoDisc_h_Statics::ClassInfo),
 		nullptr, 0,
 		Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_RotoDisc_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_RotoDisc_h_Statics::EnumInfo));

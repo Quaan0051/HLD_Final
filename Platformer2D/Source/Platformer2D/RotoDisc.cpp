@@ -8,10 +8,12 @@
 #include "PaperFlipbook.h"
 #include "PaperFlipbookComponent.h"
 #include "PlatformConstants.h"
+#include "MarioCharacter.h"
 
 // Sets default values
 ARotoDisc::ARotoDisc() :
-	Direction(ERotoDiscDirection::Clockwise)
+	Direction(ERotoDiscDirection::Clockwise),
+	Rotation(0,0,0)
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
@@ -30,6 +32,7 @@ ARotoDisc::ARotoDisc() :
 	DiscBoxComponent = CreateDefaultSubobject<UBoxComponent>("RotoDiscBoxComponent");
 	DiscBoxComponent->SetCollisionProfileName("OverlapAll");
 	DiscBoxComponent->SetGenerateOverlapEvents(true);
+	DiscBoxComponent->OnComponentBeginOverlap.AddDynamic(this, &ARotoDisc::OnOverlap);
 	DiscBoxComponent->SetupAttachment(DiscPivotBoxComponent);
 
 	SpriteComponent = CreateDefaultSubobject<UPaperSpriteComponent>("RotoDiscSpriteComponent");
@@ -40,7 +43,7 @@ ARotoDisc::ARotoDisc() :
 	FlipbookComponent = CreateDefaultSubobject<UPaperFlipbookComponent>("RotoDiscFlipbookComponent");
 	FlipbookComponent->SetCollisionEnabled(ECollisionEnabled::NoCollision);
 	FlipbookComponent->SetCollisionProfileName("NoCollision");
-	FlipbookComponent->SetupAttachment(RootComponent);
+	FlipbookComponent->SetupAttachment(DiscBoxComponent);
 
 	Tags.Add("RotoDisc");
 
@@ -51,14 +54,6 @@ void ARotoDisc::BeginPlay()
 {
 	Super::BeginPlay();
 	
-	if (Direction == ERotoDiscDirection::Clockwise)
-	{
-		Velocity = PlatformConstants::RotoDiskSpeed;
-	}
-	else if (Direction == ERotoDiscDirection::CounterClockwise)
-	{
-		Velocity = -PlatformConstants::RotoDiskSpeed;
-	}
 }
 
 // Called every frame
@@ -66,8 +61,33 @@ void ARotoDisc::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	FRotator rot = DiscPivotBoxComponent->GetRelativeRotation();
-	rot.Pitch += Velocity * DeltaTime;
-	DiscPivotBoxComponent->SetRelativeRotation(rot);
+	if (Direction == ERotoDiscDirection::Clockwise)
+	{
+		Rotation.Pitch -= PlatformConstants::RotoDiskSpeed * DeltaTime;
+
+		if (Rotation.Pitch < -360)
+		{
+			Rotation.Pitch += 360;
+		}
+	}
+	else if (Direction == ERotoDiscDirection::CounterClockwise)
+	{
+		Rotation.Pitch += PlatformConstants::RotoDiskSpeed * DeltaTime;
+
+		if (Rotation.Pitch > 360)
+		{
+			Rotation.Pitch -= 360;
+		}
+	}
+	DiscPivotBoxComponent->SetRelativeRotation(Rotation);
+	FlipbookComponent->SetWorldRotation(FRotator(0, 0, 0));
+}
+
+void ARotoDisc::OnOverlap(UPrimitiveComponent* OverlapComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
+{
+	if (OtherActor->ActorHasTag("MarioCharacter"))
+	{
+		Cast<AMarioCharacter>(OtherActor)->HandleDamage();
+	}
 }
 

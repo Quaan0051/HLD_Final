@@ -5,6 +5,12 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Default Uncontrolled Changelist",
 			"files": [
+				"S:/HLD_Final/Platformer2D/Content/Blueprints/BP_RotoDisc.uasset",
+				"S:/HLD_Final/Platformer2D/Content/Levels/LevelOne.umap",
+				"S:/HLD_Final/Platformer2D/Content/Sprites/Enemies/RotoDisc-1_Sprite.uasset",
+				"S:/HLD_Final/Platformer2D/Content/Sprites/Enemies/RotoDisc-2_Sprite.uasset",
+				"S:/HLD_Final/Platformer2D/Content/Sprites/Enemies/RotoDisc-3_Sprite.uasset",
+				"S:/HLD_Final/Platformer2D/Content/Sprites/Enemies/RotoDisc-4_Sprite.uasset",
 				"C:/HLD_Final/Platformer2D/Content/Levels/LevelOne.umap",
 				"C:/HLD_Final/Platformer2D/Content/Tilemaps/FortressTiles_TileMap.uasset"
 			]

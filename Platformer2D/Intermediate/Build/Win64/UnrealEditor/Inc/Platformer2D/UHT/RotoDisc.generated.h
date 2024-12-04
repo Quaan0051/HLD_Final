@@ -9,6 +9,9 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class AActor;
+class UPrimitiveComponent;
+struct FHitResult;
 #ifdef PLATFORMER2D_RotoDisc_generated_h
 #error "RotoDisc.generated.h already included, missing '#pragma once' in RotoDisc.h"
 #endif
@@ -17,7 +20,11 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define FID_HLD_Final_Platformer2D_Source_Platformer2D_RotoDisc_h_19_SPARSE_DATA
 #define FID_HLD_Final_Platformer2D_Source_Platformer2D_RotoDisc_h_19_SPARSE_DATA_PROPERTY_ACCESSORS
 #define FID_HLD_Final_Platformer2D_Source_Platformer2D_RotoDisc_h_19_EDITOR_ONLY_SPARSE_DATA_PROPERTY_ACCESSORS
-#define FID_HLD_Final_Platformer2D_Source_Platformer2D_RotoDisc_h_19_RPC_WRAPPERS_NO_PURE_DECLS
+#define FID_HLD_Final_Platformer2D_Source_Platformer2D_RotoDisc_h_19_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execOnOverlap);
+
+
 #define FID_HLD_Final_Platformer2D_Source_Platformer2D_RotoDisc_h_19_ACCESSORS
 #define FID_HLD_Final_Platformer2D_Source_Platformer2D_RotoDisc_h_19_INCLASS_NO_PURE_DECLS \
 private: \
