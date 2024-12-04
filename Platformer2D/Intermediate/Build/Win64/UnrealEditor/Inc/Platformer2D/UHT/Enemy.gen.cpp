@@ -177,19 +177,19 @@ void EmptyLinkFunctionForGeneratedCodeEnemy() {}
 	}
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AEnemy);
 	AEnemy::~AEnemy() {}
-	struct Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_Enemy_h_Statics
+	struct Z_CompiledInDeferFile_FID_Platformer2D_Source_Platformer2D_Enemy_h_Statics
 	{
 		static const FEnumRegisterCompiledInInfo EnumInfo[];
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
-	const FEnumRegisterCompiledInInfo Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_Enemy_h_Statics::EnumInfo[] = {
+	const FEnumRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Platformer2D_Source_Platformer2D_Enemy_h_Statics::EnumInfo[] = {
 		{ EEnemyType_StaticEnum, TEXT("EEnemyType"), &Z_Registration_Info_UEnum_EEnemyType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 2097523561U) },
 	};
-	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_Enemy_h_Statics::ClassInfo[] = {
+	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Platformer2D_Source_Platformer2D_Enemy_h_Statics::ClassInfo[] = {
 		{ Z_Construct_UClass_AEnemy, AEnemy::StaticClass, TEXT("AEnemy"), &Z_Registration_Info_UClass_AEnemy, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AEnemy), 1489187650U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_Enemy_h_2531766555(TEXT("/Script/Platformer2D"),
-		Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_Enemy_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_Enemy_h_Statics::ClassInfo),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Platformer2D_Source_Platformer2D_Enemy_h_2531766555(TEXT("/Script/Platformer2D"),
+		Z_CompiledInDeferFile_FID_Platformer2D_Source_Platformer2D_Enemy_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Platformer2D_Source_Platformer2D_Enemy_h_Statics::ClassInfo),
 		nullptr, 0,
-		Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_Enemy_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_Enemy_h_Statics::EnumInfo));
+		Z_CompiledInDeferFile_FID_Platformer2D_Source_Platformer2D_Enemy_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Platformer2D_Source_Platformer2D_Enemy_h_Statics::EnumInfo));
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

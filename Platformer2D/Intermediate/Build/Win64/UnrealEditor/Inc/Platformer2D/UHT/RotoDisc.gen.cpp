@@ -222,19 +222,19 @@ void EmptyLinkFunctionForGeneratedCodeRotoDisc() {}
 	}
 	DEFINE_VTABLE_PTR_HELPER_CTOR(ARotoDisc);
 	ARotoDisc::~ARotoDisc() {}
-	struct Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_RotoDisc_h_Statics
+	struct Z_CompiledInDeferFile_FID_Platformer2D_Source_Platformer2D_RotoDisc_h_Statics
 	{
 		static const FEnumRegisterCompiledInInfo EnumInfo[];
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
-	const FEnumRegisterCompiledInInfo Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_RotoDisc_h_Statics::EnumInfo[] = {
+	const FEnumRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Platformer2D_Source_Platformer2D_RotoDisc_h_Statics::EnumInfo[] = {
 		{ ERotoDiscDirection_StaticEnum, TEXT("ERotoDiscDirection"), &Z_Registration_Info_UEnum_ERotoDiscDirection, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1403460620U) },
 	};
-	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_RotoDisc_h_Statics::ClassInfo[] = {
+	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Platformer2D_Source_Platformer2D_RotoDisc_h_Statics::ClassInfo[] = {
 		{ Z_Construct_UClass_ARotoDisc, ARotoDisc::StaticClass, TEXT("ARotoDisc"), &Z_Registration_Info_UClass_ARotoDisc, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ARotoDisc), 823735408U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_RotoDisc_h_1736444674(TEXT("/Script/Platformer2D"),
-		Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_RotoDisc_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_RotoDisc_h_Statics::ClassInfo),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Platformer2D_Source_Platformer2D_RotoDisc_h_1736444674(TEXT("/Script/Platformer2D"),
+		Z_CompiledInDeferFile_FID_Platformer2D_Source_Platformer2D_RotoDisc_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Platformer2D_Source_Platformer2D_RotoDisc_h_Statics::ClassInfo),
 		nullptr, 0,
-		Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_RotoDisc_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_RotoDisc_h_Statics::EnumInfo));
+		Z_CompiledInDeferFile_FID_Platformer2D_Source_Platformer2D_RotoDisc_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Platformer2D_Source_Platformer2D_RotoDisc_h_Statics::EnumInfo));
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

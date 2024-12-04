@@ -5,6 +5,9 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Default Uncontrolled Changelist",
 			"files": [
+				"D:/School/HLD_Final/Platformer2D/Content/Tilemaps/FortressTiles_TileMap.uasset",
+				"D:/School/HLD_Final/Platformer2D/Content/Blueprints/BP_Spikes.uasset",
+				"D:/School/HLD_Final/Platformer2D/Content/Levels/LevelOne.umap",
 				"C:/HLD_Final/Platformer2D/Content/Levels/LevelOne.umap",
 				"C:/HLD_Final/Platformer2D/Content/Tilemaps/FortressTiles_TileMap.uasset"
 			]

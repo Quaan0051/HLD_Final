@@ -1,11 +1,11 @@
-"C:\HLD_Final\Platformer2D\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\Platformer2D\Module.Platformer2D.cpp"
-/FI"C:\HLD_Final\Platformer2D\Intermediate\Build\Win64\x64\Platformer2DEditor\DebugGame\UnrealEd\SharedPCH.UnrealEd.NonOptimized.Cpp20.h"
-/FI"C:\HLD_Final\Platformer2D\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\Platformer2D\Definitions.Platformer2D.h"
-/Yu"C:\HLD_Final\Platformer2D\Intermediate\Build\Win64\x64\Platformer2DEditor\DebugGame\UnrealEd\SharedPCH.UnrealEd.NonOptimized.Cpp20.h"
-/Fp"C:\HLD_Final\Platformer2D\Intermediate\Build\Win64\x64\Platformer2DEditor\DebugGame\UnrealEd\SharedPCH.UnrealEd.NonOptimized.Cpp20.h.pch"
-/Fo"C:\HLD_Final\Platformer2D\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\Platformer2D\Module.Platformer2D.cpp.obj"
-/sourceDependencies "C:\HLD_Final\Platformer2D\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\Platformer2D\Module.Platformer2D.cpp.dep.json"
-@"C:\HLD_Final\Platformer2D\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\Platformer2D\Platformer2D.Shared.rsp"
+"D:\School\HLD_Final\Platformer2D\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\Platformer2D\Module.Platformer2D.cpp"
+/FI"D:\School\HLD_Final\Platformer2D\Intermediate\Build\Win64\x64\Platformer2DEditor\DebugGame\UnrealEd\SharedPCH.UnrealEd.NonOptimized.Cpp20.h"
+/FI"D:\School\HLD_Final\Platformer2D\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\Platformer2D\Definitions.Platformer2D.h"
+/Yu"D:\School\HLD_Final\Platformer2D\Intermediate\Build\Win64\x64\Platformer2DEditor\DebugGame\UnrealEd\SharedPCH.UnrealEd.NonOptimized.Cpp20.h"
+/Fp"D:\School\HLD_Final\Platformer2D\Intermediate\Build\Win64\x64\Platformer2DEditor\DebugGame\UnrealEd\SharedPCH.UnrealEd.NonOptimized.Cpp20.h.pch"
+/Fo"D:\School\HLD_Final\Platformer2D\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\Platformer2D\Module.Platformer2D.cpp.obj"
+/sourceDependencies "D:\School\HLD_Final\Platformer2D\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\Platformer2D\Module.Platformer2D.cpp.dep.json"
+@"D:\School\HLD_Final\Platformer2D\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\Platformer2D\Platformer2D.Shared.rsp"
 /Zc:inline
 /nologo
 /Oi
