@@ -26,10 +26,13 @@
 			"MushroomPickup.gen.cpp.obj",
 			"Pickup.gen.cpp.obj",
 			"PiranhaPlant.gen.cpp.obj",
+			"Platformer2D.init.gen.cpp.obj",
 			"PlatformerGameModeBase.gen.cpp.obj",
 			"PlatformerGameStateBase.gen.cpp.obj",
 			"PoofEffect.gen.cpp.obj",
 			"QuestionCircle.gen.cpp.obj",
+			"RotoDisc.gen.cpp.obj",
+			"Spikes.gen.cpp.obj",
 			"StarEffect.gen.cpp.obj",
 			"Thwomp.gen.cpp.obj",
 			"Boo.cpp.obj",
@@ -61,11 +64,10 @@
 			"PlatformerGameStateBase.cpp.obj",
 			"PoofEffect.cpp.obj",
 			"QuestionCircle.cpp.obj",
+			"RotoDisc.cpp.obj",
+			"Spikes.cpp.obj",
 			"StarEffect.cpp.obj",
-			"Thwomp.cpp.obj",
-			"Platformer2D.init.gen.cpp.obj",
-			"RotoDisc.gen.cpp.obj",
-			"RotoDisc.cpp.obj"
+			"Thwomp.cpp.obj"
 		]
 	}
 }

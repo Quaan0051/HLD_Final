@@ -1,4 +1,8 @@
-#include "C:/HLD_Final/Platformer2D/Intermediate/Build/Win64/x64/Platformer2DEditor/Development/UnrealEd/SharedDefinitions.UnrealEd.Cpp20.h"
+<<<<<<< HEAD
+#include "S:/HLD_Final/Platformer2D/Intermediate/Build/Win64/x64/Platformer2DEditor/Development/UnrealEd/SharedDefinitions.UnrealEd.Cpp20.h"
+=======
+#include "D:/School/HLD_Final/Platformer2D/Intermediate/Build/Win64/x64/Platformer2DEditor/Development/UnrealEd/SharedDefinitions.UnrealEd.Cpp20.h"
+>>>>>>> 145885524313b9fd6798e01ec0efc253f4245b2c
 #undef UE_IS_ENGINE_MODULE
 #undef DEPRECATED_FORGAME
 #define DEPRECATED_FORGAME DEPRECATED

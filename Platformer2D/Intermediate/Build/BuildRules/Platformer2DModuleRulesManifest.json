@@ -1,14 +1,8 @@
 {
 	"SourceFiles": [
-<<<<<<< HEAD
 		"S:\\HLD_Final\\Platformer2D\\Source\\Platformer2D\\Platformer2D.Build.cs",
 		"S:\\HLD_Final\\Platformer2D\\Source\\Platformer2D.Target.cs",
 		"S:\\HLD_Final\\Platformer2D\\Source\\Platformer2DEditor.Target.cs"
-=======
-		"D:\\School\\HLD_Final\\Platformer2D\\Source\\Platformer2D\\Platformer2D.Build.cs",
-		"D:\\School\\HLD_Final\\Platformer2D\\Source\\Platformer2D.Target.cs",
-		"D:\\School\\HLD_Final\\Platformer2D\\Source\\Platformer2DEditor.Target.cs"
->>>>>>> 145885524313b9fd6798e01ec0efc253f4245b2c
 	],
 	"EngineVersion": "5.3.2"
 }
