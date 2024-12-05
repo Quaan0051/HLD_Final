@@ -8,6 +8,7 @@
 APlatformerGameStateBase::APlatformerGameStateBase() :
 	TimeRemaining(GameConstants::DefaultGameDuration),
 	BlackOverlayAlpha(0.0f),
+	ActiveRoom(1),
 	IsGameOver(false),
 	IsGameWon(false)
 {}

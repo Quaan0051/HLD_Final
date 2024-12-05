@@ -224,6 +224,10 @@ void AMarioCharacter::Respawn(FVector location)
 		AMarioController* marioController = Cast<AMarioController>(Controller);
 		if (marioController != nullptr)
 		{
+			APlatformerGameModeBase* gameMode = GetWorld()->GetAuthGameMode<APlatformerGameModeBase>();
+			gameMode->SaveGlobalData();
+			marioController->RestartLevel();
+
 			marioController->SetControlRotation(FRotator(0.0f, 0.0f, 0.0f));
 
 			PlayerState->Direction = EMarioDirection::Right;

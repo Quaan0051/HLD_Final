@@ -63,6 +63,9 @@ public:
 
 	void NextRoom(class ADoor* door);
 
+	void SaveGlobalData();
+	void LoadGlobalData();
+
 private:
 	void SpawnDeadMario(FVector location);
 

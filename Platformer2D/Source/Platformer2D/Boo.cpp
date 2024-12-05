@@ -5,6 +5,8 @@
 #include "EnemyConstants.h"
 #include "MarioCharacter.h"
 #include "MarioPlayerState.h"
+#include "PlatformerGameStateBase.h"
+#include "PlatformerGameModeBase.h"
 #include "PaperFlipbookComponent.h"
 #include "Components/BoxComponent.h"
 #include "Math/UnrealMathUtility.h"
@@ -35,42 +37,46 @@ void ABoo::BeginPlay()
 
 void ABoo::Tick(float DeltaTime)
 {
-	Super::Tick(DeltaTime);
-
-	if (State == EBooState::Active) 
+	APlatformerGameStateBase* gameState = GetWorld()->GetAuthGameMode<APlatformerGameModeBase>()->GetGameState<APlatformerGameStateBase>();
+	if (gameState->ActiveRoom == RoomID)
 	{
-		ApplyInitialVelocity();
-		FVector location = GetActorLocation(); 
-		location += Velocity * DeltaTime; 
-		SetActorLocation(location); 
-	}
+		Super::Tick(DeltaTime);
 
-	AMarioCharacter* mario = GetWorld()->GetFirstPlayerController()->GetPawn<AMarioCharacter>(); 
-	AMarioPlayerState* playerState = Cast<AMarioPlayerState>(mario->GetPlayerState());
+		if (State == EBooState::Active)
+		{
+			ApplyInitialVelocity();
+			FVector location = GetActorLocation();
+			location += Velocity * DeltaTime;
+			SetActorLocation(location);
+		}
 
-	// check mario direction
-	if (playerState->Direction == EMarioDirection::Left) // if mario looking left
-	{
-		if (GetActorLocation().X < mario->GetActorLocation().X) // if Boo is to the left of mario
+		AMarioCharacter* mario = GetWorld()->GetFirstPlayerController()->GetPawn<AMarioCharacter>();
+		AMarioPlayerState* playerState = Cast<AMarioPlayerState>(mario->GetPlayerState());
+
+		// check mario direction
+		if (playerState->Direction == EMarioDirection::Left) // if mario looking left
 		{
-			SetState(EBooState::Hiding);
+			if (GetActorLocation().X < mario->GetActorLocation().X) // if Boo is to the left of mario
+			{
+				SetState(EBooState::Hiding);
+			}
+			else if (GetActorLocation().X > mario->GetActorLocation().X) // if Boo is to the right of mario
+			{
+				BooDirection = EBooDirection::Left;
+				SetState(EBooState::Active);
+			}
 		}
-		else if (GetActorLocation().X > mario->GetActorLocation().X) // if Boo is to the right of mario
+		else if (playerState->Direction == EMarioDirection::Right) // if mario looking right
 		{
-			BooDirection = EBooDirection::Left;
-			SetState(EBooState::Active);
-		}
-	}
-	else if (playerState->Direction == EMarioDirection::Right) // if mario looking right
-	{
-		if (GetActorLocation().X > mario->GetActorLocation().X) // if Boo is to the right of mario
-		{
-			SetState(EBooState::Hiding);
-		}
-		else if (GetActorLocation().X < mario->GetActorLocation().X) // if Boo is to the left of mario
-		{
-			BooDirection = EBooDirection::Right;
-			SetState(EBooState::Active);
+			if (GetActorLocation().X > mario->GetActorLocation().X) // if Boo is to the right of mario
+			{
+				SetState(EBooState::Hiding);
+			}
+			else if (GetActorLocation().X < mario->GetActorLocation().X) // if Boo is to the left of mario
+			{
+				BooDirection = EBooDirection::Right;
+				SetState(EBooState::Active);
+			}
 		}
 	}
 }

@@ -41,6 +41,9 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Boo flipbooks")
 	class UPaperFlipbook* HidingFlipbook;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Boo Room")
+	int RoomID;
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;

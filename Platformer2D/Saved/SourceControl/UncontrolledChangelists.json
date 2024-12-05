@@ -5,7 +5,8 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Default Uncontrolled Changelist",
 			"files": [
-				"S:/HLD_Final/Platformer2D/Content/Levels/LevelOne.umap"
+				"S:/HLD_Final/Platformer2D/Content/Levels/LevelOne.umap",
+				"S:/HLD_Final/Platformer2D/Content/Blueprints/MyCustomGameInstance.uasset"
 			]
 		}
 	]

@@ -101,6 +101,10 @@ void EmptyLinkFunctionForGeneratedCodeDoor() {}
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_Type_MetaData[];
 #endif
 		static const UECodeGen_Private::FEnumPropertyParams NewProp_Type;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_RoomID_MetaData[];
+#endif
+		static const UECodeGen_Private::FIntPropertyParams NewProp_RoomID;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
@@ -139,11 +143,19 @@ void EmptyLinkFunctionForGeneratedCodeDoor() {}
 	};
 #endif
 	const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_ADoor_Statics::NewProp_Type = { "Type", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ADoor, Type), Z_Construct_UEnum_Platformer2D_EDoorType, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ADoor_Statics::NewProp_Type_MetaData), Z_Construct_UClass_ADoor_Statics::NewProp_Type_MetaData) }; // 4219103117
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADoor_Statics::NewProp_RoomID_MetaData[] = {
+		{ "Category", "Door Room" },
+		{ "ModuleRelativePath", "Door.h" },
+	};
+#endif
+	const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_ADoor_Statics::NewProp_RoomID = { "RoomID", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ADoor, RoomID), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ADoor_Statics::NewProp_RoomID_MetaData), Z_Construct_UClass_ADoor_Statics::NewProp_RoomID_MetaData) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ADoor_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADoor_Statics::NewProp_BoxComponent,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADoor_Statics::NewProp_Counterpart,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADoor_Statics::NewProp_Type_Underlying,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADoor_Statics::NewProp_Type,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADoor_Statics::NewProp_RoomID,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ADoor_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ADoor>::IsAbstract,
@@ -187,9 +199,9 @@ void EmptyLinkFunctionForGeneratedCodeDoor() {}
 		{ EDoorType_StaticEnum, TEXT("EDoorType"), &Z_Registration_Info_UEnum_EDoorType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 4219103117U) },
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_Door_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_ADoor, ADoor::StaticClass, TEXT("ADoor"), &Z_Registration_Info_UClass_ADoor, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ADoor), 1490063659U) },
+		{ Z_Construct_UClass_ADoor, ADoor::StaticClass, TEXT("ADoor"), &Z_Registration_Info_UClass_ADoor, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ADoor), 915609887U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_Door_h_472141659(TEXT("/Script/Platformer2D"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_Door_h_2046190134(TEXT("/Script/Platformer2D"),
 		Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_Door_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_Door_h_Statics::ClassInfo),
 		nullptr, 0,
 		Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_Door_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_Door_h_Statics::EnumInfo));

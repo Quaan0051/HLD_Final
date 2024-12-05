@@ -254,6 +254,10 @@ void EmptyLinkFunctionForGeneratedCodeBoo() {}
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_HidingFlipbook_MetaData[];
 #endif
 		static const UECodeGen_Private::FObjectPropertyParams NewProp_HidingFlipbook;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_RoomID_MetaData[];
+#endif
+		static const UECodeGen_Private::FIntPropertyParams NewProp_RoomID;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
@@ -298,11 +302,19 @@ void EmptyLinkFunctionForGeneratedCodeBoo() {}
 	};
 #endif
 	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABoo_Statics::NewProp_HidingFlipbook = { "HidingFlipbook", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABoo, HidingFlipbook), Z_Construct_UClass_UPaperFlipbook_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABoo_Statics::NewProp_HidingFlipbook_MetaData), Z_Construct_UClass_ABoo_Statics::NewProp_HidingFlipbook_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABoo_Statics::NewProp_RoomID_MetaData[] = {
+		{ "Category", "Boo Room" },
+		{ "ModuleRelativePath", "Boo.h" },
+	};
+#endif
+	const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_ABoo_Statics::NewProp_RoomID = { "RoomID", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABoo, RoomID), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABoo_Statics::NewProp_RoomID_MetaData), Z_Construct_UClass_ABoo_Statics::NewProp_RoomID_MetaData) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ABoo_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABoo_Statics::NewProp_BooDirection_Underlying,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABoo_Statics::NewProp_BooDirection,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABoo_Statics::NewProp_ActiveFlipbook,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABoo_Statics::NewProp_HidingFlipbook,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABoo_Statics::NewProp_RoomID,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ABoo_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ABoo>::IsAbstract,
@@ -347,9 +359,9 @@ void EmptyLinkFunctionForGeneratedCodeBoo() {}
 		{ EBooDirection_StaticEnum, TEXT("EBooDirection"), &Z_Registration_Info_UEnum_EBooDirection, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 3454823769U) },
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_Boo_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_ABoo, ABoo::StaticClass, TEXT("ABoo"), &Z_Registration_Info_UClass_ABoo, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABoo), 2263138598U) },
+		{ Z_Construct_UClass_ABoo, ABoo::StaticClass, TEXT("ABoo"), &Z_Registration_Info_UClass_ABoo, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABoo), 1343915659U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_Boo_h_3866736055(TEXT("/Script/Platformer2D"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_Boo_h_2412444396(TEXT("/Script/Platformer2D"),
 		Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_Boo_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_Boo_h_Statics::ClassInfo),
 		nullptr, 0,
 		Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_Boo_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_Boo_h_Statics::EnumInfo));

@@ -33,6 +33,9 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Door Type")
 	EDoorType Type;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Door Room")
+	int RoomID;
+
 	void DoorAction();
 
 };

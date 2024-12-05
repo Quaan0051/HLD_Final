@@ -3,6 +3,7 @@
 
 #include "PlatformerGameModeBase.h"
 #include "PlatformerGameStateBase.h"
+#include "CustomGameInstance.h"
 #include "MarioPlayerState.h"
 #include "MarioCamera.h"
 #include "MarioCharacter.h"
@@ -71,6 +72,13 @@ void APlatformerGameModeBase::BeginPlay()
 		tileMapComponent->GetMapSize(mapWidth, mapHeight, numLayer);
 		Camera->SetTileMapSize(mapWidth, mapHeight);
 	}
+
+	UCustomGameInstance* game = Cast<UCustomGameInstance>(GetGameInstance());
+	if (game->LoadGlobalData)
+	{
+		LoadGlobalData();
+	}
+	game->LoadGlobalData = true;
 
 	SetState(EGameState::FadeHold);
 }
@@ -276,8 +284,38 @@ void APlatformerGameModeBase::SpawnMarioTransform(FVector location, EMarioForm o
 
 void APlatformerGameModeBase::NextRoom(ADoor* door)
 {
+	APlatformerGameStateBase* gameState = GetGameState<APlatformerGameStateBase>();
+	gameState->ActiveRoom = door->RoomID;
 	MarioSpawnLocation = door->GetActorLocation();
 	SetState(EGameState::FadeIn);
+}
+
+void APlatformerGameModeBase::SaveGlobalData()
+{
+	UCustomGameInstance* game = Cast<UCustomGameInstance>(GetGameInstance());
+	APlatformerGameStateBase* gameState = GetGameState<APlatformerGameStateBase>();
+	AMarioCharacter* mario = GetWorld()->GetFirstPlayerController()->GetPawn<AMarioCharacter>();
+	AMarioPlayerState* playerState = mario->GetPlayerState<AMarioPlayerState>();
+
+	game->MarioSpawnLocation = MarioSpawnLocation;
+	game->TimeRemaining = gameState->TimeRemaining;
+	game->ActiveRoom = gameState->ActiveRoom;
+	game->Lives = playerState->Lives;
+	game->Coins = playerState->Coins;
+}
+
+void APlatformerGameModeBase::LoadGlobalData()
+{
+	UCustomGameInstance* game = Cast<UCustomGameInstance>(GetGameInstance());
+	APlatformerGameStateBase* gameState = GetGameState<APlatformerGameStateBase>();
+	AMarioCharacter* mario = GetWorld()->GetFirstPlayerController()->GetPawn<AMarioCharacter>();
+	AMarioPlayerState* playerState = mario->GetPlayerState<AMarioPlayerState>();
+
+	MarioSpawnLocation = game->MarioSpawnLocation;
+	gameState->TimeRemaining = game->TimeRemaining;
+	gameState->ActiveRoom = game->ActiveRoom;
+	playerState->Lives = game->Lives;
+	playerState->Coins = game->Coins;
 }
 
 void APlatformerGameModeBase::OnMarioTransformEnded()

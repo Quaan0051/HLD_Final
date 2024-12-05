@@ -24,6 +24,9 @@ public:
 	float BlackOverlayAlpha;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Game")
+	int ActiveRoom;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Game")
 	bool IsGameOver;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Game")
