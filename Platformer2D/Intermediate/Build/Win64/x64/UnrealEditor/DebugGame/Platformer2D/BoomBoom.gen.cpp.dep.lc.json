@@ -1,0 +1,17 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\school\\hld_final\\platformer2d\\intermediate\\build\\win64\\unrealeditor\\inc\\platformer2d\\uht\\boomboom.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\school\\hld_final\\platformer2d\\intermediate\\build\\win64\\x64\\platformer2deditor\\debuggame\\unrealed\\sharedpch.unrealed.nonoptimized.cpp20.h.pch",
+        "Includes": [
+            "d:\\school\\hld_final\\platformer2d\\intermediate\\build\\win64\\x64\\unrealeditor\\debuggame\\platformer2d\\definitions.platformer2d.h",
+            "d:\\school\\hld_final\\platformer2d\\source\\platformer2d\\boomboom.h",
+            "d:\\school\\hld_final\\platformer2d\\source\\platformer2d\\enemy.h",
+            "d:\\school\\hld_final\\platformer2d\\intermediate\\build\\win64\\unrealeditor\\inc\\platformer2d\\uht\\enemy.generated.h",
+            "d:\\school\\hld_final\\platformer2d\\intermediate\\build\\win64\\unrealeditor\\inc\\platformer2d\\uht\\boomboom.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
