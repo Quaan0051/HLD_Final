@@ -575,19 +575,19 @@ void EmptyLinkFunctionForGeneratedCodeBoomBoom() {}
 	}
 	DEFINE_VTABLE_PTR_HELPER_CTOR(ABoomBoom);
 	ABoomBoom::~ABoomBoom() {}
-	struct Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_BoomBoom_h_Statics
+	struct Z_CompiledInDeferFile_FID_Platformer2D_Source_Platformer2D_BoomBoom_h_Statics
 	{
 		static const FEnumRegisterCompiledInInfo EnumInfo[];
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
-	const FEnumRegisterCompiledInInfo Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_BoomBoom_h_Statics::EnumInfo[] = {
+	const FEnumRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Platformer2D_Source_Platformer2D_BoomBoom_h_Statics::EnumInfo[] = {
 		{ EBoomBoomState_StaticEnum, TEXT("EBoomBoomState"), &Z_Registration_Info_UEnum_EBoomBoomState, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 3823728237U) },
 	};
-	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_BoomBoom_h_Statics::ClassInfo[] = {
+	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Platformer2D_Source_Platformer2D_BoomBoom_h_Statics::ClassInfo[] = {
 		{ Z_Construct_UClass_ABoomBoom, ABoomBoom::StaticClass, TEXT("ABoomBoom"), &Z_Registration_Info_UClass_ABoomBoom, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABoomBoom), 403983682U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_BoomBoom_h_2337284406(TEXT("/Script/Platformer2D"),
-		Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_BoomBoom_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_BoomBoom_h_Statics::ClassInfo),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Platformer2D_Source_Platformer2D_BoomBoom_h_2337284406(TEXT("/Script/Platformer2D"),
+		Z_CompiledInDeferFile_FID_Platformer2D_Source_Platformer2D_BoomBoom_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Platformer2D_Source_Platformer2D_BoomBoom_h_Statics::ClassInfo),
 		nullptr, 0,
-		Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_BoomBoom_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_BoomBoom_h_Statics::EnumInfo));
+		Z_CompiledInDeferFile_FID_Platformer2D_Source_Platformer2D_BoomBoom_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Platformer2D_Source_Platformer2D_BoomBoom_h_Statics::EnumInfo));
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -15,7 +15,8 @@ enum class EEnemyType : uint8
 	Boo				UMETA(DisplayName = "Boo"),
 	Thwomp          UMETA(DisplayName = "Thwomp"),
 	ChainChomp		UMETA(DisplayName = "ChainChomp"),
-	BoomBoom		UMETA(DisplayName = "BoomBoom")
+	BoomBoom		UMETA(DisplayName = "BoomBoom"),
+	DryBones		UMETA(DisplayName = "DryBones")
 };
 
 UCLASS()

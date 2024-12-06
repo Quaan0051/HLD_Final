@@ -24,7 +24,7 @@ namespace EnemyConstants
 	constexpr float ThwompRiseSpeed = 100.0f;
 	constexpr float ThwompDelay = 3.0f;
 
-	//BoomBoom constants
+	// BoomBoom constants
 	constexpr int	BoomBoomMaxLives = 3;
 	constexpr float BoomBoomInitialSpeed = 150.0f;
 	constexpr float BoomBoomDamagedSpeed = 250.0f;
@@ -37,4 +37,10 @@ namespace EnemyConstants
 	constexpr float BoomBoomDirectionChangeTimerMax = 2.0f;
 	constexpr float BoomBoomJumpTimerMin = 3.0f;
 	constexpr float BoomBoomJumpTimerMax = 5.0f;
+
+	// Dry Bones constants
+	constexpr float DryBonesSpeed = 85.0f;
+	constexpr float DryBonesGoingDownDuration = 0.01f;
+	constexpr float DryBonesStirringDuration = 1.0f;
+	constexpr float DryBonesDownedDuration = 2.5f;
 }

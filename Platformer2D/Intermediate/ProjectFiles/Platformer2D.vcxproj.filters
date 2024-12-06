@@ -96,6 +96,12 @@
     <ClInclude Include="..\..\Source\Platformer2D\Door.h">
       <Filter>Source\Platformer2D</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\Platformer2D\DryBones.cpp">
+      <Filter>Source\Platformer2D</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Platformer2D\DryBones.h">
+      <Filter>Source\Platformer2D</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\Platformer2D\EffectConstants.h">
       <Filter>Source\Platformer2D</Filter>
     </ClInclude>

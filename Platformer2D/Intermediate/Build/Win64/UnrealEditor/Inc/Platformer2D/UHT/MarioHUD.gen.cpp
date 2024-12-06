@@ -97,15 +97,15 @@ void EmptyLinkFunctionForGeneratedCodeMarioHUD() {}
 	}
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AMarioHUD);
 	AMarioHUD::~AMarioHUD() {}
-	struct Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_MarioHUD_h_Statics
+	struct Z_CompiledInDeferFile_FID_Platformer2D_Source_Platformer2D_MarioHUD_h_Statics
 	{
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
-	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_MarioHUD_h_Statics::ClassInfo[] = {
+	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Platformer2D_Source_Platformer2D_MarioHUD_h_Statics::ClassInfo[] = {
 		{ Z_Construct_UClass_AMarioHUD, AMarioHUD::StaticClass, TEXT("AMarioHUD"), &Z_Registration_Info_UClass_AMarioHUD, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMarioHUD), 538738118U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_MarioHUD_h_4256785915(TEXT("/Script/Platformer2D"),
-		Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_MarioHUD_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_MarioHUD_h_Statics::ClassInfo),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Platformer2D_Source_Platformer2D_MarioHUD_h_4256785915(TEXT("/Script/Platformer2D"),
+		Z_CompiledInDeferFile_FID_Platformer2D_Source_Platformer2D_MarioHUD_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Platformer2D_Source_Platformer2D_MarioHUD_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

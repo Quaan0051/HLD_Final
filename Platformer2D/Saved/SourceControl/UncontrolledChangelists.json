@@ -5,6 +5,16 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Default Uncontrolled Changelist",
 			"files": [
+				"D:/School/HLD_Final/Platformer2D/Content/Tilemaps/FortressTiles_TileMap.uasset",
+				"D:/School/HLD_Final/Platformer2D/Content/Levels/LevelOne.umap",
+				"D:/School/HLD_Final/Platformer2D/Content/Flipbooks/FP_DryBones-Stirring.uasset",
+				"D:/School/HLD_Final/Platformer2D/Content/Flipbooks/FP_DryBones-Downed.uasset",
+				"D:/School/HLD_Final/Platformer2D/Content/Flipbooks/FP_DryBones-Walking.uasset",
+				"D:/School/HLD_Final/Platformer2D/Content/Flipbooks/FP_DryBones-GoingDown.uasset",
+				"D:/School/HLD_Final/Platformer2D/Content/Blueprints/BP_DryBones.uasset",
+				"D:/School/HLD_Final/Platformer2D/Content/Flipbooks/FP_DryBones-Active.uasset",
+				"D:/School/HLD_Final/Platformer2D/Content/Flipbooks/FP_DryBones-Crumble.uasset",
+				"D:/School/HLD_Final/Platformer2D/Content/Sprites/Enemies/FP_DryBones-Stirring.uasset",
 				"S:/HLD_Final/Platformer2D/Content/Levels/LevelOne.umap",
 				"S:/HLD_Final/Platformer2D/Content/Blueprints/MyCustomGameInstance.uasset"
 			]

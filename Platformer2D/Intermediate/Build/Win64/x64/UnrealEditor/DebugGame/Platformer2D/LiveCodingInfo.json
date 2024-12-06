@@ -9,10 +9,10 @@
 			"ChainChomp.cpp.obj",
 			"CoinPickup.cpp.obj",
 			"CoinSwitch.cpp.obj",
+			"CustomGameInstance.cpp.obj",
 			"DeadActor.cpp.obj",
 			"DonutLift.cpp.obj",
 			"Door.cpp.obj",
-			"Enemy.cpp.obj",
 			"Goomba.cpp.obj",
 			"ItemBox.cpp.obj",
 			"ItemBoxCoin.cpp.obj",
@@ -32,6 +32,7 @@
 			"PoofEffect.cpp.obj",
 			"QuestionCircle.cpp.obj",
 			"RotoDisc.cpp.obj",
+			"Spikes.cpp.obj",
 			"StarEffect.cpp.obj",
 			"Thwomp.cpp.obj",
 			"Boo.gen.cpp.obj",
@@ -41,9 +42,11 @@
 			"ChainChomp.gen.cpp.obj",
 			"CoinPickup.gen.cpp.obj",
 			"CoinSwitch.gen.cpp.obj",
+			"CustomGameInstance.gen.cpp.obj",
 			"DeadActor.gen.cpp.obj",
 			"DonutLift.gen.cpp.obj",
 			"Door.gen.cpp.obj",
+			"DryBones.gen.cpp.obj",
 			"Enemy.gen.cpp.obj",
 			"Goomba.gen.cpp.obj",
 			"ItemBox.gen.cpp.obj",
@@ -67,7 +70,8 @@
 			"Spikes.gen.cpp.obj",
 			"StarEffect.gen.cpp.obj",
 			"Thwomp.gen.cpp.obj",
-			"Spikes.cpp.obj"
+			"DryBones.cpp.obj",
+			"Enemy.cpp.obj"
 		]
 	}
 }
