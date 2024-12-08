@@ -24,4 +24,10 @@ namespace GameConstants
 	constexpr float CameraDepthY = 200.0f;
 	constexpr float CameraRotationYaw = 270.0f;
 	constexpr int32 MaxCameraShakes = 9;
+
+	// Trap Door constants
+	constexpr float TrapDoorFallSpeed = 400.0f;
+
+	// Secret Wall 
+
 }
