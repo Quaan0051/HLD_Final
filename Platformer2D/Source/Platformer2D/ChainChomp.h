@@ -11,8 +11,7 @@ enum class EChainChompState : uint8
 {
 	Unknown		UMETA(DisplayName = "Unknown"),
 	Idle		UMETA(DisplayName = "Idle"),
-	Jumping		UMETA(DisplayName = "Active"),
-	Detached	UMETA(DisplayName = "Detached")
+	Jumping		UMETA(DisplayName = "Active")
 };
 
 /**
@@ -32,11 +31,23 @@ public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components")
 	class UBoxComponent* AttachPoint;
 
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components")
+	class UPaperSpriteComponent* Chain1;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components")
+	class UPaperSpriteComponent* Chain2;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components")
+	class UPaperSpriteComponent* Chain3;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components")
+	class UPaperSpriteComponent* Chain4;
+
 	/*UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components")
 	class UBoxComponent* HeadBoxComponent;*/
 
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components")
-	class UPhysicsConstraintComponent* ConstraintComponent;
+	//UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components")
+	//class UPhysicsConstraintComponent* ConstraintComponent;
 
 protected:
 	// Called when the game starts or when spawned
@@ -54,7 +65,6 @@ protected:
 private:
 	EChainChompState State;
 	float StateTimer;
-	bool MaxJump;
-	float JumpHoldTimer;
-	bool JumpCheck;
+	float DirectionTimer;
+	FVector Velocity;
 };

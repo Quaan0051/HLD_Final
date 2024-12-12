@@ -43,4 +43,18 @@ namespace EnemyConstants
 	constexpr float DryBonesGoingDownDuration = 0.01f;
 	constexpr float DryBonesStirringDuration = 1.0f;
 	constexpr float DryBonesDownedDuration = 2.5f;
+
+	// ChainChomp constants
+	constexpr float ChainChompSpeed = 80.0f;
+	constexpr float ChainChompJumpSpeed = 400.0f;
+	constexpr float ChainChompPlayerDetectionRange = 600.0f;
+	constexpr float ChainChompMaxDistanceFromAnchor = 120.0f;
+	constexpr float ChainChompDirectionChangeTimerMin = 0.5f;
+	constexpr float ChainChompDirectionChangeTimerMax = 2.0f;
+	constexpr float ChainChompJumpTimerMin = 1.0f;
+	constexpr float ChainChompJumpTimerMax = 2.0f;
+	constexpr float ChainChompJumpHeightMin = 0.4f;
+	constexpr float ChainChompJumpHeightMax = 1.0f;
+	constexpr float ChainChompJumpHoldDuration = 2.0f;
+	
 }

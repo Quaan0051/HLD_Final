@@ -43,6 +43,8 @@ class PLATFORMER2D_API AMarioPlayerState : public APlayerState
 public:
 	AMarioPlayerState();
 
+	bool IsDead();
+
 	float DirectionScalar();
 
 	EMarioState State;

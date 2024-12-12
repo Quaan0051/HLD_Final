@@ -500,14 +500,20 @@ void AMarioCharacter::OnJumped_Implementation()
 	Super::OnJumped_Implementation();
 
 	if (PlayerState != nullptr)
+	{
 		PlayerState->IsOnGround = false;
 
-	ApplyStateChange(EMarioState::Jumping);
+		if (PlayerState->IsDead() == false)
+			ApplyStateChange(EMarioState::Jumping);
+	}
+		
+
+	
 }
 
 void AMarioCharacter::NotifyJumpApex()
 {
-	if (PlayerState != nullptr && PlayerState->IsOnGround == false)
+	if (PlayerState != nullptr && PlayerState->IsOnGround == false && PlayerState->IsDead() == false)
 		ApplyStateChange(EMarioState::Falling);
 }
 
@@ -515,7 +521,7 @@ void AMarioCharacter::Landed(const FHitResult& Hit)
 {
 	Super::Landed(Hit);
 
-	if (PlayerState != nullptr)
+	if (PlayerState != nullptr && PlayerState->IsDead() == false)
 	{
 		PlayerState->IsOnGround = true;
 

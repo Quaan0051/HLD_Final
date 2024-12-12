@@ -17,16 +17,16 @@ struct FHitResult;
 #endif
 #define PLATFORMER2D_TrapDoor_generated_h
 
-#define FID_Platformer2D_Source_Platformer2D_TrapDoor_h_21_SPARSE_DATA
-#define FID_Platformer2D_Source_Platformer2D_TrapDoor_h_21_SPARSE_DATA_PROPERTY_ACCESSORS
-#define FID_Platformer2D_Source_Platformer2D_TrapDoor_h_21_EDITOR_ONLY_SPARSE_DATA_PROPERTY_ACCESSORS
-#define FID_Platformer2D_Source_Platformer2D_TrapDoor_h_21_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_HLD_Final_Platformer2D_Source_Platformer2D_TrapDoor_h_21_SPARSE_DATA
+#define FID_HLD_Final_Platformer2D_Source_Platformer2D_TrapDoor_h_21_SPARSE_DATA_PROPERTY_ACCESSORS
+#define FID_HLD_Final_Platformer2D_Source_Platformer2D_TrapDoor_h_21_EDITOR_ONLY_SPARSE_DATA_PROPERTY_ACCESSORS
+#define FID_HLD_Final_Platformer2D_Source_Platformer2D_TrapDoor_h_21_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execOnOverlap);
 
 
-#define FID_Platformer2D_Source_Platformer2D_TrapDoor_h_21_ACCESSORS
-#define FID_Platformer2D_Source_Platformer2D_TrapDoor_h_21_INCLASS_NO_PURE_DECLS \
+#define FID_HLD_Final_Platformer2D_Source_Platformer2D_TrapDoor_h_21_ACCESSORS
+#define FID_HLD_Final_Platformer2D_Source_Platformer2D_TrapDoor_h_21_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesATrapDoor(); \
 	friend struct Z_Construct_UClass_ATrapDoor_Statics; \
@@ -35,7 +35,7 @@ public: \
 	DECLARE_SERIALIZER(ATrapDoor)
 
 
-#define FID_Platformer2D_Source_Platformer2D_TrapDoor_h_21_ENHANCED_CONSTRUCTORS \
+#define FID_HLD_Final_Platformer2D_Source_Platformer2D_TrapDoor_h_21_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API ATrapDoor(ATrapDoor&&); \
@@ -47,17 +47,17 @@ public: \
 	NO_API virtual ~ATrapDoor();
 
 
-#define FID_Platformer2D_Source_Platformer2D_TrapDoor_h_18_PROLOG
-#define FID_Platformer2D_Source_Platformer2D_TrapDoor_h_21_GENERATED_BODY \
+#define FID_HLD_Final_Platformer2D_Source_Platformer2D_TrapDoor_h_18_PROLOG
+#define FID_HLD_Final_Platformer2D_Source_Platformer2D_TrapDoor_h_21_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Platformer2D_Source_Platformer2D_TrapDoor_h_21_SPARSE_DATA \
-	FID_Platformer2D_Source_Platformer2D_TrapDoor_h_21_SPARSE_DATA_PROPERTY_ACCESSORS \
-	FID_Platformer2D_Source_Platformer2D_TrapDoor_h_21_EDITOR_ONLY_SPARSE_DATA_PROPERTY_ACCESSORS \
-	FID_Platformer2D_Source_Platformer2D_TrapDoor_h_21_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_Platformer2D_Source_Platformer2D_TrapDoor_h_21_ACCESSORS \
-	FID_Platformer2D_Source_Platformer2D_TrapDoor_h_21_INCLASS_NO_PURE_DECLS \
-	FID_Platformer2D_Source_Platformer2D_TrapDoor_h_21_ENHANCED_CONSTRUCTORS \
+	FID_HLD_Final_Platformer2D_Source_Platformer2D_TrapDoor_h_21_SPARSE_DATA \
+	FID_HLD_Final_Platformer2D_Source_Platformer2D_TrapDoor_h_21_SPARSE_DATA_PROPERTY_ACCESSORS \
+	FID_HLD_Final_Platformer2D_Source_Platformer2D_TrapDoor_h_21_EDITOR_ONLY_SPARSE_DATA_PROPERTY_ACCESSORS \
+	FID_HLD_Final_Platformer2D_Source_Platformer2D_TrapDoor_h_21_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_HLD_Final_Platformer2D_Source_Platformer2D_TrapDoor_h_21_ACCESSORS \
+	FID_HLD_Final_Platformer2D_Source_Platformer2D_TrapDoor_h_21_INCLASS_NO_PURE_DECLS \
+	FID_HLD_Final_Platformer2D_Source_Platformer2D_TrapDoor_h_21_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -65,7 +65,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> PLATFORMER2D_API UClass* StaticClass<class ATrapDoor>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Platformer2D_Source_Platformer2D_TrapDoor_h
+#define CURRENT_FILE_ID FID_HLD_Final_Platformer2D_Source_Platformer2D_TrapDoor_h
 
 
 #define FOREACH_ENUM_ETRAPDOORSTATE(op) \

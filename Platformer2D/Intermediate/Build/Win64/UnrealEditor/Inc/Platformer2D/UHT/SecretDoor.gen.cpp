@@ -351,19 +351,19 @@ void EmptyLinkFunctionForGeneratedCodeSecretDoor() {}
 	}
 	DEFINE_VTABLE_PTR_HELPER_CTOR(ASecretDoor);
 	ASecretDoor::~ASecretDoor() {}
-	struct Z_CompiledInDeferFile_FID_Platformer2D_Source_Platformer2D_SecretDoor_h_Statics
+	struct Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_SecretDoor_h_Statics
 	{
 		static const FEnumRegisterCompiledInInfo EnumInfo[];
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
-	const FEnumRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Platformer2D_Source_Platformer2D_SecretDoor_h_Statics::EnumInfo[] = {
+	const FEnumRegisterCompiledInInfo Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_SecretDoor_h_Statics::EnumInfo[] = {
 		{ ESecretDoorState_StaticEnum, TEXT("ESecretDoorState"), &Z_Registration_Info_UEnum_ESecretDoorState, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1036973684U) },
 	};
-	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Platformer2D_Source_Platformer2D_SecretDoor_h_Statics::ClassInfo[] = {
+	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_SecretDoor_h_Statics::ClassInfo[] = {
 		{ Z_Construct_UClass_ASecretDoor, ASecretDoor::StaticClass, TEXT("ASecretDoor"), &Z_Registration_Info_UClass_ASecretDoor, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASecretDoor), 1208074926U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Platformer2D_Source_Platformer2D_SecretDoor_h_950247025(TEXT("/Script/Platformer2D"),
-		Z_CompiledInDeferFile_FID_Platformer2D_Source_Platformer2D_SecretDoor_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Platformer2D_Source_Platformer2D_SecretDoor_h_Statics::ClassInfo),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_SecretDoor_h_950247025(TEXT("/Script/Platformer2D"),
+		Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_SecretDoor_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_SecretDoor_h_Statics::ClassInfo),
 		nullptr, 0,
-		Z_CompiledInDeferFile_FID_Platformer2D_Source_Platformer2D_SecretDoor_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Platformer2D_Source_Platformer2D_SecretDoor_h_Statics::EnumInfo));
+		Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_SecretDoor_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_SecretDoor_h_Statics::EnumInfo));
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

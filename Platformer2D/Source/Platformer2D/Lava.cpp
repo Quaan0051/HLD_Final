@@ -16,10 +16,10 @@ ALava::ALava()
 
 	// Create the BoxComponent and set it as the Root component
 	BoxComponent = CreateDefaultSubobject<UBoxComponent>("LavaBoxComponent");
-	BoxComponent->SetCollisionProfileName("BlockAllDynamic");
-	BoxComponent->SetNotifyRigidBodyCollision(true);
+	BoxComponent->SetCollisionProfileName("OverlapAll");
+	BoxComponent->SetGenerateOverlapEvents(true);
 	BoxComponent->SetSimulatePhysics(false);
-	BoxComponent->OnComponentHit.AddDynamic(this, &ALava::OnHit);
+	BoxComponent->OnComponentBeginOverlap.AddDynamic(this, &ALava::OnOverlap);
 	RootComponent = BoxComponent;
 
 	// Create the FlipbookComponent and attach it to the Root component
@@ -39,10 +39,11 @@ void ALava::BeginPlay()
 	
 }
 
-void ALava::OnHit(UPrimitiveComponent* HitComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit)
+void ALava::OnOverlap(UPrimitiveComponent* OverlapComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
 	if (OtherActor->ActorHasTag("MarioCharacter"))
 	{
+		Cast<AMarioCharacter>(OtherActor)->ApplyTransformChange(EMarioForm::Small, true);
 		Cast<AMarioCharacter>(OtherActor)->HandleDamage(true);
 	}
 }

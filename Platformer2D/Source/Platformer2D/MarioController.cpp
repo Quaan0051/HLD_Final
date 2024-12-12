@@ -126,7 +126,7 @@ void AMarioController::OnMove(const struct FInputActionValue& Value)
 {
 	float Direction = Value.Get<float>();
 
-	if (MarioCharacter != nullptr && MarioPlayerState != nullptr)
+	if (MarioCharacter != nullptr && MarioPlayerState != nullptr && MarioPlayerState->IsDead() == false)
 	{
 		if (MarioPlayerState->State != EMarioState::Ducking)
 		{
@@ -158,7 +158,7 @@ void AMarioController::OnMove(const struct FInputActionValue& Value)
 
 void AMarioController::OnMoveReleased(const struct FInputActionValue& Value)
 {
-	if (MarioCharacter != nullptr && MarioPlayerState != nullptr)
+	if (MarioCharacter != nullptr && MarioPlayerState != nullptr && MarioPlayerState->IsDead() == false)
 	{
 		if (MarioPlayerState->IsOnGround && MarioPlayerState->State != EMarioState::Ducking)
 		{
@@ -169,42 +169,42 @@ void AMarioController::OnMoveReleased(const struct FInputActionValue& Value)
 
 void AMarioController::OnRunPressed(const struct FInputActionValue& Value)
 {
-	if (MarioCharacter != nullptr)
+	if (MarioCharacter != nullptr && MarioPlayerState->IsDead() == false)
 		MarioCharacter->Run();
 }
 
 void AMarioController::OnRunReleased(const struct FInputActionValue& Value)
 {
-	if (MarioCharacter != nullptr)
+	if (MarioCharacter != nullptr && MarioPlayerState->IsDead() == false)
 		MarioCharacter->StopRunning();
 }
 
 void AMarioController::OnJumpPressed(const struct FInputActionValue& Value)
 {
-	if (MarioCharacter != nullptr)
+	if (MarioCharacter != nullptr && MarioPlayerState->IsDead() == false)
 		MarioCharacter->Jump();
 }
 
 void AMarioController::OnJumpReleased(const struct FInputActionValue& Value)
 {
-	if (MarioCharacter != nullptr)
+	if (MarioCharacter != nullptr && MarioPlayerState->IsDead() == false)
 		MarioCharacter->StopJumping();
 }
 
 void AMarioController::OnDuckPressed(const struct FInputActionValue& Value)
 {
-	if (MarioCharacter != nullptr)
+	if (MarioCharacter != nullptr && MarioPlayerState->IsDead() == false)
 		MarioCharacter->Duck();
 }
 
 void AMarioController::OnDuckReleased(const struct FInputActionValue& Value)
 {
-	if (MarioCharacter != nullptr)
+	if (MarioCharacter != nullptr && MarioPlayerState->IsDead() == false)
 		MarioCharacter->StopDucking();
 }
 
 void AMarioController::OnUpPressed(const FInputActionValue& Value)
 {
-	if (MarioCharacter != nullptr)
+	if (MarioCharacter != nullptr && MarioPlayerState->IsDead() == false)
 		MarioCharacter->TryDoor();
 }

@@ -108,15 +108,15 @@ void EmptyLinkFunctionForGeneratedCodeDeadActor() {}
 	}
 	DEFINE_VTABLE_PTR_HELPER_CTOR(ADeadActor);
 	ADeadActor::~ADeadActor() {}
-	struct Z_CompiledInDeferFile_FID_Platformer2D_Source_Platformer2D_DeadActor_h_Statics
+	struct Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_DeadActor_h_Statics
 	{
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
-	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Platformer2D_Source_Platformer2D_DeadActor_h_Statics::ClassInfo[] = {
+	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_DeadActor_h_Statics::ClassInfo[] = {
 		{ Z_Construct_UClass_ADeadActor, ADeadActor::StaticClass, TEXT("ADeadActor"), &Z_Registration_Info_UClass_ADeadActor, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ADeadActor), 2193683460U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Platformer2D_Source_Platformer2D_DeadActor_h_3710889170(TEXT("/Script/Platformer2D"),
-		Z_CompiledInDeferFile_FID_Platformer2D_Source_Platformer2D_DeadActor_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Platformer2D_Source_Platformer2D_DeadActor_h_Statics::ClassInfo),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_DeadActor_h_3710889170(TEXT("/Script/Platformer2D"),
+		Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_DeadActor_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_DeadActor_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

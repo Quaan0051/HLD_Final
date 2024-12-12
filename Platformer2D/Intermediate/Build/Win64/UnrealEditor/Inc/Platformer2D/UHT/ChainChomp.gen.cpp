@@ -14,9 +14,9 @@ void EmptyLinkFunctionForGeneratedCodeChainChomp() {}
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
 	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UBoxComponent_NoRegister();
-	ENGINE_API UClass* Z_Construct_UClass_UPhysicsConstraintComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UPrimitiveComponent_NoRegister();
 	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FHitResult();
+	PAPER2D_API UClass* Z_Construct_UClass_UPaperSpriteComponent_NoRegister();
 	PLATFORMER2D_API UClass* Z_Construct_UClass_AChainChomp();
 	PLATFORMER2D_API UClass* Z_Construct_UClass_AChainChomp_NoRegister();
 	PLATFORMER2D_API UClass* Z_Construct_UClass_AEnemy();
@@ -48,13 +48,10 @@ void EmptyLinkFunctionForGeneratedCodeChainChomp() {}
 		{ "EChainChompState::Unknown", (int64)EChainChompState::Unknown },
 		{ "EChainChompState::Idle", (int64)EChainChompState::Idle },
 		{ "EChainChompState::Jumping", (int64)EChainChompState::Jumping },
-		{ "EChainChompState::Detached", (int64)EChainChompState::Detached },
 	};
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UEnum_Platformer2D_EChainChompState_Statics::Enum_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
-		{ "Detached.DisplayName", "Detached" },
-		{ "Detached.Name", "EChainChompState::Detached" },
 		{ "Idle.DisplayName", "Idle" },
 		{ "Idle.Name", "EChainChompState::Idle" },
 		{ "Jumping.DisplayName", "Active" },
@@ -199,9 +196,21 @@ void EmptyLinkFunctionForGeneratedCodeChainChomp() {}
 #endif
 		static const UECodeGen_Private::FObjectPropertyParams NewProp_AttachPoint;
 #if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam NewProp_ConstraintComponent_MetaData[];
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_Chain1_MetaData[];
 #endif
-		static const UECodeGen_Private::FObjectPropertyParams NewProp_ConstraintComponent;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_Chain1;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_Chain2_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_Chain2;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_Chain3_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_Chain3;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_Chain4_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_Chain4;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
@@ -241,23 +250,44 @@ void EmptyLinkFunctionForGeneratedCodeChainChomp() {}
 #endif
 	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AChainChomp_Statics::NewProp_AttachPoint = { "AttachPoint", nullptr, (EPropertyFlags)0x00100000000a001d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AChainChomp, AttachPoint), Z_Construct_UClass_UBoxComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AChainChomp_Statics::NewProp_AttachPoint_MetaData), Z_Construct_UClass_AChainChomp_Statics::NewProp_AttachPoint_MetaData) };
 #if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AChainChomp_Statics::NewProp_ConstraintComponent_MetaData[] = {
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AChainChomp_Statics::NewProp_Chain1_MetaData[] = {
 		{ "Category", "Components" },
-#if !UE_BUILD_SHIPPING
-		{ "Comment", "/*UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = \"Components\")\n\x09""class UBoxComponent* HeadBoxComponent;*/" },
-#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "ChainChomp.h" },
-#if !UE_BUILD_SHIPPING
-		{ "ToolTip", "UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = \"Components\")\n       class UBoxComponent* HeadBoxComponent;" },
-#endif
 	};
 #endif
-	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AChainChomp_Statics::NewProp_ConstraintComponent = { "ConstraintComponent", nullptr, (EPropertyFlags)0x00100000000a001d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AChainChomp, ConstraintComponent), Z_Construct_UClass_UPhysicsConstraintComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AChainChomp_Statics::NewProp_ConstraintComponent_MetaData), Z_Construct_UClass_AChainChomp_Statics::NewProp_ConstraintComponent_MetaData) };
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AChainChomp_Statics::NewProp_Chain1 = { "Chain1", nullptr, (EPropertyFlags)0x00100000000a001d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AChainChomp, Chain1), Z_Construct_UClass_UPaperSpriteComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AChainChomp_Statics::NewProp_Chain1_MetaData), Z_Construct_UClass_AChainChomp_Statics::NewProp_Chain1_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AChainChomp_Statics::NewProp_Chain2_MetaData[] = {
+		{ "Category", "Components" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "ChainChomp.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AChainChomp_Statics::NewProp_Chain2 = { "Chain2", nullptr, (EPropertyFlags)0x00100000000a001d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AChainChomp, Chain2), Z_Construct_UClass_UPaperSpriteComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AChainChomp_Statics::NewProp_Chain2_MetaData), Z_Construct_UClass_AChainChomp_Statics::NewProp_Chain2_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AChainChomp_Statics::NewProp_Chain3_MetaData[] = {
+		{ "Category", "Components" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "ChainChomp.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AChainChomp_Statics::NewProp_Chain3 = { "Chain3", nullptr, (EPropertyFlags)0x00100000000a001d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AChainChomp, Chain3), Z_Construct_UClass_UPaperSpriteComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AChainChomp_Statics::NewProp_Chain3_MetaData), Z_Construct_UClass_AChainChomp_Statics::NewProp_Chain3_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AChainChomp_Statics::NewProp_Chain4_MetaData[] = {
+		{ "Category", "Components" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "ChainChomp.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AChainChomp_Statics::NewProp_Chain4 = { "Chain4", nullptr, (EPropertyFlags)0x00100000000a001d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AChainChomp, Chain4), Z_Construct_UClass_UPaperSpriteComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AChainChomp_Statics::NewProp_Chain4_MetaData), Z_Construct_UClass_AChainChomp_Statics::NewProp_Chain4_MetaData) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AChainChomp_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AChainChomp_Statics::NewProp_CableComponent,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AChainChomp_Statics::NewProp_AttachPoint,
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AChainChomp_Statics::NewProp_ConstraintComponent,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AChainChomp_Statics::NewProp_Chain1,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AChainChomp_Statics::NewProp_Chain2,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AChainChomp_Statics::NewProp_Chain3,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AChainChomp_Statics::NewProp_Chain4,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AChainChomp_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AChainChomp>::IsAbstract,
@@ -292,19 +322,19 @@ void EmptyLinkFunctionForGeneratedCodeChainChomp() {}
 	}
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AChainChomp);
 	AChainChomp::~AChainChomp() {}
-	struct Z_CompiledInDeferFile_FID_Platformer2D_Source_Platformer2D_ChainChomp_h_Statics
+	struct Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_ChainChomp_h_Statics
 	{
 		static const FEnumRegisterCompiledInInfo EnumInfo[];
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
-	const FEnumRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Platformer2D_Source_Platformer2D_ChainChomp_h_Statics::EnumInfo[] = {
-		{ EChainChompState_StaticEnum, TEXT("EChainChompState"), &Z_Registration_Info_UEnum_EChainChompState, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 2604979616U) },
+	const FEnumRegisterCompiledInInfo Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_ChainChomp_h_Statics::EnumInfo[] = {
+		{ EChainChompState_StaticEnum, TEXT("EChainChompState"), &Z_Registration_Info_UEnum_EChainChompState, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 781533286U) },
 	};
-	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Platformer2D_Source_Platformer2D_ChainChomp_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AChainChomp, AChainChomp::StaticClass, TEXT("AChainChomp"), &Z_Registration_Info_UClass_AChainChomp, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AChainChomp), 2764010550U) },
+	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_ChainChomp_h_Statics::ClassInfo[] = {
+		{ Z_Construct_UClass_AChainChomp, AChainChomp::StaticClass, TEXT("AChainChomp"), &Z_Registration_Info_UClass_AChainChomp, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AChainChomp), 525278822U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Platformer2D_Source_Platformer2D_ChainChomp_h_2528214121(TEXT("/Script/Platformer2D"),
-		Z_CompiledInDeferFile_FID_Platformer2D_Source_Platformer2D_ChainChomp_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Platformer2D_Source_Platformer2D_ChainChomp_h_Statics::ClassInfo),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_ChainChomp_h_3557458920(TEXT("/Script/Platformer2D"),
+		Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_ChainChomp_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_ChainChomp_h_Statics::ClassInfo),
 		nullptr, 0,
-		Z_CompiledInDeferFile_FID_Platformer2D_Source_Platformer2D_ChainChomp_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Platformer2D_Source_Platformer2D_ChainChomp_h_Statics::EnumInfo));
+		Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_ChainChomp_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_ChainChomp_h_Statics::EnumInfo));
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

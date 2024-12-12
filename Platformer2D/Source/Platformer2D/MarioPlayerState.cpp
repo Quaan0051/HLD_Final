@@ -21,6 +21,11 @@ AMarioPlayerState::AMarioPlayerState()
 	IsRunning = false;
 }
 
+bool AMarioPlayerState::IsDead()
+{
+	return State == EMarioState::Dead;
+}
+
 float AMarioPlayerState::DirectionScalar()
 {
 	return Direction == EMarioDirection::Left ? -1.0f : 1.0f;

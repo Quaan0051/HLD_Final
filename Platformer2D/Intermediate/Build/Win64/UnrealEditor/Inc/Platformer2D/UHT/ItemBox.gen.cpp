@@ -422,20 +422,20 @@ void EmptyLinkFunctionForGeneratedCodeItemBox() {}
 	}
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AItemBox);
 	AItemBox::~AItemBox() {}
-	struct Z_CompiledInDeferFile_FID_Platformer2D_Source_Platformer2D_ItemBox_h_Statics
+	struct Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_ItemBox_h_Statics
 	{
 		static const FEnumRegisterCompiledInInfo EnumInfo[];
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
-	const FEnumRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Platformer2D_Source_Platformer2D_ItemBox_h_Statics::EnumInfo[] = {
+	const FEnumRegisterCompiledInInfo Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_ItemBox_h_Statics::EnumInfo[] = {
 		{ EItemBoxState_StaticEnum, TEXT("EItemBoxState"), &Z_Registration_Info_UEnum_EItemBoxState, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1674523607U) },
 		{ EItemBoxContents_StaticEnum, TEXT("EItemBoxContents"), &Z_Registration_Info_UEnum_EItemBoxContents, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 617968470U) },
 	};
-	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Platformer2D_Source_Platformer2D_ItemBox_h_Statics::ClassInfo[] = {
+	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_ItemBox_h_Statics::ClassInfo[] = {
 		{ Z_Construct_UClass_AItemBox, AItemBox::StaticClass, TEXT("AItemBox"), &Z_Registration_Info_UClass_AItemBox, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AItemBox), 2060867283U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Platformer2D_Source_Platformer2D_ItemBox_h_994005383(TEXT("/Script/Platformer2D"),
-		Z_CompiledInDeferFile_FID_Platformer2D_Source_Platformer2D_ItemBox_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Platformer2D_Source_Platformer2D_ItemBox_h_Statics::ClassInfo),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_ItemBox_h_994005383(TEXT("/Script/Platformer2D"),
+		Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_ItemBox_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_ItemBox_h_Statics::ClassInfo),
 		nullptr, 0,
-		Z_CompiledInDeferFile_FID_Platformer2D_Source_Platformer2D_ItemBox_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Platformer2D_Source_Platformer2D_ItemBox_h_Statics::EnumInfo));
+		Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_ItemBox_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_HLD_Final_Platformer2D_Source_Platformer2D_ItemBox_h_Statics::EnumInfo));
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
