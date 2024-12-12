@@ -17,18 +17,18 @@ struct FHitResult;
 #endif
 #define PLATFORMER2D_DryBones_generated_h
 
-#define FID_HLD_Final_Platformer2D_Source_Platformer2D_DryBones_h_32_SPARSE_DATA
-#define FID_HLD_Final_Platformer2D_Source_Platformer2D_DryBones_h_32_SPARSE_DATA_PROPERTY_ACCESSORS
-#define FID_HLD_Final_Platformer2D_Source_Platformer2D_DryBones_h_32_EDITOR_ONLY_SPARSE_DATA_PROPERTY_ACCESSORS
-#define FID_HLD_Final_Platformer2D_Source_Platformer2D_DryBones_h_32_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_Platformer2D_Source_Platformer2D_DryBones_h_32_SPARSE_DATA
+#define FID_Platformer2D_Source_Platformer2D_DryBones_h_32_SPARSE_DATA_PROPERTY_ACCESSORS
+#define FID_Platformer2D_Source_Platformer2D_DryBones_h_32_EDITOR_ONLY_SPARSE_DATA_PROPERTY_ACCESSORS
+#define FID_Platformer2D_Source_Platformer2D_DryBones_h_32_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execOnHit); \
 	DECLARE_FUNCTION(execOnBackOverlap); \
 	DECLARE_FUNCTION(execOnFrontOverlap);
 
 
-#define FID_HLD_Final_Platformer2D_Source_Platformer2D_DryBones_h_32_ACCESSORS
-#define FID_HLD_Final_Platformer2D_Source_Platformer2D_DryBones_h_32_INCLASS_NO_PURE_DECLS \
+#define FID_Platformer2D_Source_Platformer2D_DryBones_h_32_ACCESSORS
+#define FID_Platformer2D_Source_Platformer2D_DryBones_h_32_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesADryBones(); \
 	friend struct Z_Construct_UClass_ADryBones_Statics; \
@@ -37,7 +37,7 @@ public: \
 	DECLARE_SERIALIZER(ADryBones)
 
 
-#define FID_HLD_Final_Platformer2D_Source_Platformer2D_DryBones_h_32_ENHANCED_CONSTRUCTORS \
+#define FID_Platformer2D_Source_Platformer2D_DryBones_h_32_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API ADryBones(ADryBones&&); \
@@ -49,17 +49,17 @@ public: \
 	NO_API virtual ~ADryBones();
 
 
-#define FID_HLD_Final_Platformer2D_Source_Platformer2D_DryBones_h_29_PROLOG
-#define FID_HLD_Final_Platformer2D_Source_Platformer2D_DryBones_h_32_GENERATED_BODY \
+#define FID_Platformer2D_Source_Platformer2D_DryBones_h_29_PROLOG
+#define FID_Platformer2D_Source_Platformer2D_DryBones_h_32_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_HLD_Final_Platformer2D_Source_Platformer2D_DryBones_h_32_SPARSE_DATA \
-	FID_HLD_Final_Platformer2D_Source_Platformer2D_DryBones_h_32_SPARSE_DATA_PROPERTY_ACCESSORS \
-	FID_HLD_Final_Platformer2D_Source_Platformer2D_DryBones_h_32_EDITOR_ONLY_SPARSE_DATA_PROPERTY_ACCESSORS \
-	FID_HLD_Final_Platformer2D_Source_Platformer2D_DryBones_h_32_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_HLD_Final_Platformer2D_Source_Platformer2D_DryBones_h_32_ACCESSORS \
-	FID_HLD_Final_Platformer2D_Source_Platformer2D_DryBones_h_32_INCLASS_NO_PURE_DECLS \
-	FID_HLD_Final_Platformer2D_Source_Platformer2D_DryBones_h_32_ENHANCED_CONSTRUCTORS \
+	FID_Platformer2D_Source_Platformer2D_DryBones_h_32_SPARSE_DATA \
+	FID_Platformer2D_Source_Platformer2D_DryBones_h_32_SPARSE_DATA_PROPERTY_ACCESSORS \
+	FID_Platformer2D_Source_Platformer2D_DryBones_h_32_EDITOR_ONLY_SPARSE_DATA_PROPERTY_ACCESSORS \
+	FID_Platformer2D_Source_Platformer2D_DryBones_h_32_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_Platformer2D_Source_Platformer2D_DryBones_h_32_ACCESSORS \
+	FID_Platformer2D_Source_Platformer2D_DryBones_h_32_INCLASS_NO_PURE_DECLS \
+	FID_Platformer2D_Source_Platformer2D_DryBones_h_32_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -67,7 +67,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> PLATFORMER2D_API UClass* StaticClass<class ADryBones>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_HLD_Final_Platformer2D_Source_Platformer2D_DryBones_h
+#define CURRENT_FILE_ID FID_Platformer2D_Source_Platformer2D_DryBones_h
 
 
 #define FOREACH_ENUM_EDRYBONESSTATE(op) \

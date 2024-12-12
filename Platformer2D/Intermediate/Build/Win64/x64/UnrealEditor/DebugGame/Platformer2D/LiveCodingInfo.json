@@ -2,6 +2,7 @@
 	"RemapUnityFiles": 
 	{
 		"Module.Platformer2D.1.cpp.obj": [
+			"Boo.cpp.obj",
 			"Boo.gen.cpp.obj",
 			"BoomBoom.gen.cpp.obj",
 			"BreakableBlock.gen.cpp.obj",
@@ -20,9 +21,7 @@
 			"ItemBoxCoin.gen.cpp.obj",
 			"Lava.gen.cpp.obj",
 			"MarioCamera.gen.cpp.obj",
-			"MarioCharacter.gen.cpp.obj"
-		],
-		"Module.Platformer2D.2.cpp.obj": [
+			"MarioCharacter.gen.cpp.obj",
 			"MarioController.gen.cpp.obj",
 			"MarioHUD.gen.cpp.obj",
 			"MarioPlayerState.gen.cpp.obj",
@@ -30,15 +29,19 @@
 			"MushroomPickup.gen.cpp.obj",
 			"Pickup.gen.cpp.obj",
 			"PiranhaPlant.gen.cpp.obj",
+			"Platformer2D.init.gen.cpp.obj",
 			"PlatformerGameModeBase.gen.cpp.obj",
 			"PlatformerGameStateBase.gen.cpp.obj",
 			"PoofEffect.gen.cpp.obj",
 			"QuestionCircle.gen.cpp.obj",
 			"RotoDisc.gen.cpp.obj",
+			"SecretDoor.gen.cpp.obj",
 			"Spikes.gen.cpp.obj",
 			"StarEffect.gen.cpp.obj",
 			"Thwomp.gen.cpp.obj",
-			"Boo.cpp.obj",
+			"TrapDoor.gen.cpp.obj"
+		],
+		"Module.Platformer2D.2.cpp.obj": [
 			"BoomBoom.cpp.obj",
 			"BreakableBlock.cpp.obj",
 			"BreakableBlockBit.cpp.obj",
@@ -70,13 +73,10 @@
 			"PoofEffect.cpp.obj",
 			"QuestionCircle.cpp.obj",
 			"RotoDisc.cpp.obj",
+			"SecretDoor.cpp.obj",
 			"Spikes.cpp.obj",
 			"StarEffect.cpp.obj",
 			"Thwomp.cpp.obj",
-			"Platformer2D.init.gen.cpp.obj",
-			"SecretDoor.gen.cpp.obj",
-			"TrapDoor.gen.cpp.obj",
-			"SecretDoor.cpp.obj",
 			"TrapDoor.cpp.obj"
 		]
 	}

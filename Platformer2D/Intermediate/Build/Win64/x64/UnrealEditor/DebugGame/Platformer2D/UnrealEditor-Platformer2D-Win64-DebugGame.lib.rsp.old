@@ -1,0 +1,13 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-Platformer2D-Win64-DebugGame.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"D:\School\HLD_Final\Platformer2D\Intermediate\Build\Win64\x64\Platformer2DEditor\DebugGame\UnrealEd\SharedPCH.UnrealEd.NonOptimized.Cpp20.h.obj"
+"D:\School\HLD_Final\Platformer2D\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\Platformer2D\Module.Platformer2D.1.cpp.obj"
+"D:\School\HLD_Final\Platformer2D\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\Platformer2D\Module.Platformer2D.2.cpp.obj"
+"D:\School\HLD_Final\Platformer2D\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\Platformer2D\Default.rc2.res"
+/OUT:"D:\School\HLD_Final\Platformer2D\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\Platformer2D\UnrealEditor-Platformer2D-Win64-DebugGame.lib"

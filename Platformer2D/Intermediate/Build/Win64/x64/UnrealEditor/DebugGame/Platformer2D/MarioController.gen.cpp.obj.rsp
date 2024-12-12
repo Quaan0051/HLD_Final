@@ -1,10 +1,10 @@
-"D:\School\HLD_Final\Platformer2D\Source\Platformer2D\TrapDoor.cpp"
+"D:\School\HLD_Final\Platformer2D\Intermediate\Build\Win64\UnrealEditor\Inc\Platformer2D\UHT\MarioController.gen.cpp"
 /FI"D:\School\HLD_Final\Platformer2D\Intermediate\Build\Win64\x64\Platformer2DEditor\DebugGame\UnrealEd\SharedPCH.UnrealEd.NonOptimized.Cpp20.h"
 /FI"D:\School\HLD_Final\Platformer2D\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\Platformer2D\Definitions.Platformer2D.h"
 /Yu"D:\School\HLD_Final\Platformer2D\Intermediate\Build\Win64\x64\Platformer2DEditor\DebugGame\UnrealEd\SharedPCH.UnrealEd.NonOptimized.Cpp20.h"
 /Fp"D:\School\HLD_Final\Platformer2D\Intermediate\Build\Win64\x64\Platformer2DEditor\DebugGame\UnrealEd\SharedPCH.UnrealEd.NonOptimized.Cpp20.h.pch"
-/Fo"D:\School\HLD_Final\Platformer2D\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\Platformer2D\TrapDoor.cpp.obj"
-/sourceDependencies "D:\School\HLD_Final\Platformer2D\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\Platformer2D\TrapDoor.cpp.dep.json"
+/Fo"D:\School\HLD_Final\Platformer2D\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\Platformer2D\MarioController.gen.cpp.obj"
+/sourceDependencies "D:\School\HLD_Final\Platformer2D\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\Platformer2D\MarioController.gen.cpp.dep.json"
 @"D:\School\HLD_Final\Platformer2D\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\Platformer2D\Platformer2D.Shared.rsp"
 /Zc:inline
 /nologo
