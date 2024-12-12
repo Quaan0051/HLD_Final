@@ -2,7 +2,6 @@
 	"RemapUnityFiles": 
 	{
 		"Module.Platformer2D.1.cpp.obj": [
-			"Boo.cpp.obj",
 			"Boo.gen.cpp.obj",
 			"BoomBoom.gen.cpp.obj",
 			"BreakableBlock.gen.cpp.obj",
@@ -21,7 +20,9 @@
 			"ItemBoxCoin.gen.cpp.obj",
 			"Lava.gen.cpp.obj",
 			"MarioCamera.gen.cpp.obj",
-			"MarioCharacter.gen.cpp.obj",
+			"MarioCharacter.gen.cpp.obj"
+		],
+		"Module.Platformer2D.2.cpp.obj": [
 			"MarioController.gen.cpp.obj",
 			"MarioHUD.gen.cpp.obj",
 			"MarioPlayerState.gen.cpp.obj",
@@ -39,12 +40,12 @@
 			"Spikes.gen.cpp.obj",
 			"StarEffect.gen.cpp.obj",
 			"Thwomp.gen.cpp.obj",
-			"TrapDoor.gen.cpp.obj"
-		],
-		"Module.Platformer2D.2.cpp.obj": [
+			"TrapDoor.gen.cpp.obj",
+			"Boo.cpp.obj",
 			"BoomBoom.cpp.obj",
 			"BreakableBlock.cpp.obj",
 			"BreakableBlockBit.cpp.obj",
+			"ChainChomp.cpp.obj",
 			"CoinPickup.cpp.obj",
 			"CoinSwitch.cpp.obj",
 			"CustomGameInstance.cpp.obj",
@@ -56,8 +57,12 @@
 			"Goomba.cpp.obj",
 			"ItemBox.cpp.obj",
 			"ItemBoxCoin.cpp.obj",
+			"Lava.cpp.obj",
 			"MarioCamera.cpp.obj",
+			"MarioCharacter.cpp.obj",
+			"MarioController.cpp.obj",
 			"MarioHUD.cpp.obj",
+			"MarioPlayerState.cpp.obj",
 			"MarioTransform.cpp.obj",
 			"MushroomPickup.cpp.obj",
 			"Pickup.cpp.obj",
@@ -72,12 +77,7 @@
 			"Spikes.cpp.obj",
 			"StarEffect.cpp.obj",
 			"Thwomp.cpp.obj",
-			"TrapDoor.cpp.obj",
-			"ChainChomp.cpp.obj",
-			"Lava.cpp.obj",
-			"MarioCharacter.cpp.obj",
-			"MarioController.cpp.obj",
-			"MarioPlayerState.cpp.obj"
+			"TrapDoor.cpp.obj"
 		]
 	}
 }
