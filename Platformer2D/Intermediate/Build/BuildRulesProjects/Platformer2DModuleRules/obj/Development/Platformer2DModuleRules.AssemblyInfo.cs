@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Platformer2DModuleRules")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Development")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+233df5ded540cb5a82a6b59bffc049444c04a7a1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c7c70b0b913fecd0759e777e1d1ca8c1368e7f5c")]
 [assembly: System.Reflection.AssemblyProductAttribute("Platformer2DModuleRules")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Platformer2DModuleRules")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

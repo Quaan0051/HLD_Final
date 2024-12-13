@@ -17,17 +17,17 @@ struct FHitResult;
 #endif
 #define PLATFORMER2D_SecretDoor_generated_h
 
-#define FID_HLD_Final_Platformer2D_Source_Platformer2D_SecretDoor_h_20_SPARSE_DATA
-#define FID_HLD_Final_Platformer2D_Source_Platformer2D_SecretDoor_h_20_SPARSE_DATA_PROPERTY_ACCESSORS
-#define FID_HLD_Final_Platformer2D_Source_Platformer2D_SecretDoor_h_20_EDITOR_ONLY_SPARSE_DATA_PROPERTY_ACCESSORS
-#define FID_HLD_Final_Platformer2D_Source_Platformer2D_SecretDoor_h_20_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_Platformer2D_Source_Platformer2D_SecretDoor_h_20_SPARSE_DATA
+#define FID_Platformer2D_Source_Platformer2D_SecretDoor_h_20_SPARSE_DATA_PROPERTY_ACCESSORS
+#define FID_Platformer2D_Source_Platformer2D_SecretDoor_h_20_EDITOR_ONLY_SPARSE_DATA_PROPERTY_ACCESSORS
+#define FID_Platformer2D_Source_Platformer2D_SecretDoor_h_20_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execEndOverlap); \
 	DECLARE_FUNCTION(execOnOverlap);
 
 
-#define FID_HLD_Final_Platformer2D_Source_Platformer2D_SecretDoor_h_20_ACCESSORS
-#define FID_HLD_Final_Platformer2D_Source_Platformer2D_SecretDoor_h_20_INCLASS_NO_PURE_DECLS \
+#define FID_Platformer2D_Source_Platformer2D_SecretDoor_h_20_ACCESSORS
+#define FID_Platformer2D_Source_Platformer2D_SecretDoor_h_20_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesASecretDoor(); \
 	friend struct Z_Construct_UClass_ASecretDoor_Statics; \
@@ -36,7 +36,7 @@ public: \
 	DECLARE_SERIALIZER(ASecretDoor)
 
 
-#define FID_HLD_Final_Platformer2D_Source_Platformer2D_SecretDoor_h_20_ENHANCED_CONSTRUCTORS \
+#define FID_Platformer2D_Source_Platformer2D_SecretDoor_h_20_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API ASecretDoor(ASecretDoor&&); \
@@ -48,17 +48,17 @@ public: \
 	NO_API virtual ~ASecretDoor();
 
 
-#define FID_HLD_Final_Platformer2D_Source_Platformer2D_SecretDoor_h_17_PROLOG
-#define FID_HLD_Final_Platformer2D_Source_Platformer2D_SecretDoor_h_20_GENERATED_BODY \
+#define FID_Platformer2D_Source_Platformer2D_SecretDoor_h_17_PROLOG
+#define FID_Platformer2D_Source_Platformer2D_SecretDoor_h_20_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_HLD_Final_Platformer2D_Source_Platformer2D_SecretDoor_h_20_SPARSE_DATA \
-	FID_HLD_Final_Platformer2D_Source_Platformer2D_SecretDoor_h_20_SPARSE_DATA_PROPERTY_ACCESSORS \
-	FID_HLD_Final_Platformer2D_Source_Platformer2D_SecretDoor_h_20_EDITOR_ONLY_SPARSE_DATA_PROPERTY_ACCESSORS \
-	FID_HLD_Final_Platformer2D_Source_Platformer2D_SecretDoor_h_20_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_HLD_Final_Platformer2D_Source_Platformer2D_SecretDoor_h_20_ACCESSORS \
-	FID_HLD_Final_Platformer2D_Source_Platformer2D_SecretDoor_h_20_INCLASS_NO_PURE_DECLS \
-	FID_HLD_Final_Platformer2D_Source_Platformer2D_SecretDoor_h_20_ENHANCED_CONSTRUCTORS \
+	FID_Platformer2D_Source_Platformer2D_SecretDoor_h_20_SPARSE_DATA \
+	FID_Platformer2D_Source_Platformer2D_SecretDoor_h_20_SPARSE_DATA_PROPERTY_ACCESSORS \
+	FID_Platformer2D_Source_Platformer2D_SecretDoor_h_20_EDITOR_ONLY_SPARSE_DATA_PROPERTY_ACCESSORS \
+	FID_Platformer2D_Source_Platformer2D_SecretDoor_h_20_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_Platformer2D_Source_Platformer2D_SecretDoor_h_20_ACCESSORS \
+	FID_Platformer2D_Source_Platformer2D_SecretDoor_h_20_INCLASS_NO_PURE_DECLS \
+	FID_Platformer2D_Source_Platformer2D_SecretDoor_h_20_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -66,7 +66,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> PLATFORMER2D_API UClass* StaticClass<class ASecretDoor>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_HLD_Final_Platformer2D_Source_Platformer2D_SecretDoor_h
+#define CURRENT_FILE_ID FID_Platformer2D_Source_Platformer2D_SecretDoor_h
 
 
 #define FOREACH_ENUM_ESECRETDOORSTATE(op) \
